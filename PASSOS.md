@@ -102,5 +102,15 @@
   - Adição do divisor horizontal sutil (`.sobre-divider`) acima da lista de diferenciais.
   - Criação do ícone vetorial de selo verificado com checkmark escuro sobre roseta laranja (`assets/icons/badge-check.svg`).
   - Linha de ação inferior com botão `Como trabalhamos`, divisor vertical translúcido e 5 estrelas brancas acompanhadas da nota `4,9 dada por 86 clientes`.
-  - Validação completa com captura de tela headless Chrome e execução do teste automatizado `verify_all.py` (53 assets com status HTTP 200 OK via Docker).
-
+- [x] **Passo 14: Auditoria de Formatação, Correção Estrutural de Tags HTML, Sintaxe CSS e Menu Mobile**
+  - Auditoria estrutural completa do `index.html` com parser automatizado (`scripts/check_formatting.py`):
+    - Identificadas e corrigidas seções abertas sem fechamento (`</section>`) em `#portfolio` e `#faq`.
+    - Adicionado identificador `id="topo"` na tag `<body>`, sanando links e âncoras de retorno ao topo.
+    - Validação de 100% das âncoras internas (10/10) e 100% dos atributos `alt` de acessibilidade em imagens.
+  - Correção sintática e de cascata no `css/style.css`:
+    - Adicionado fechamento de chave `}` na media query `@media (max-width: 640px)` na linha 2000, eliminando a retenção indevida das seções 8 a 14 dentro do escopo móvel.
+  - Aperfeiçoamento da responsividade e navegação móvel:
+    - Ocultação da navegação desktop (`.nav-desktop`) e divisor (`.header-divider`) em telas `<= 900px`.
+    - Ativação e exibição do botão hambúrguer `.btn-menu-mobile` e estilos completos para o menu lateral retrátil (`.mobile-drawer` e `.mobile-drawer-overlay`).
+    - Ocultação do botão secundário de contato em telas ultrapequenas `<= 520px` para garantir visual 100% limpo, equilibrado e sem transbordamento horizontal.
+  - Validação 100% no Docker com headless Chrome (viewports desktop e mobile 375x812) e `verify_all.py` (53 assets com status HTTP 200 OK).

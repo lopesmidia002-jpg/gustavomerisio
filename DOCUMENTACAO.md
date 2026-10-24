@@ -228,6 +228,18 @@ asserts/
 - **Publicação no GitHub:**
   - Repositório remoto configurado em `https://github.com/lopesmidia002-jpg/gustavomerisio.git`, branch `main` sincronizada com sucesso.
 
+### 4.16. Auditoria de Formatação, Correção de HTML, CSS e Responsividade Mobile (Passo 14)
+- **Correção Estrutural de Tags HTML (`index.html`):**
+  - Identificação e inserção dos fechamentos `</section>` ausentes nas seções `#portfolio` e `#faq`, restabelecendo a árvore semântica correta do DOM.
+  - Inserção do atributo `id="topo"` na tag `<body>`, validando todos os destinos de links de retorno ao topo do cabeçalho e rodapé.
+- **Correção de Sintaxe e Cascata CSS (`css/style.css`):**
+  - Inclusão do fechamento de chave `}` na `@media (max-width: 640px)` na linha 2000, eliminando a captura indevida das seções 8 a 14 dentro do escopo móvel.
+- **Sistema Completo do Menu Mobile Retrátil (Drawer):**
+  - Estilização completa do container `.mobile-drawer`, overlay com backdrop-filter fosco `.mobile-drawer-overlay`, cabeçalho `.mobile-drawer-header`, botão de fechamento `.btn-drawer-close`, links móveis com indicador âmbar `.mobile-nav-link` e rodapé do drawer `.mobile-drawer-footer`.
+  - Media queries de responsividade no cabeçalho: ocultação de `.nav-desktop` e `.header-divider` em viewports `<= 900px` com ativação de `.btn-menu-mobile`, e ocultação do botão secundário em `<= 520px` para evitar qualquer tipo de overflow horizontal em smartphones compactos.
+- **Suite de Validação Automatizada (`scripts/check_formatting.py`):**
+  - Parser autônomo em Python para verificação de balanceamento de tags HTML, verificação de existência de âncoras internas, presença obrigatória de `alt` em imagens e integridade de chaves/regras CSS (execução com 0 erros).
+
 ---
 
 ## 5. Acessibilidade e SEO

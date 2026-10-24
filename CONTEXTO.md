@@ -194,6 +194,8 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 - **Design Context & Governança:** [PRODUCT.md](file:///c:/Users/Nilto/OneDrive/Documentos/Projetos%20out26/gustavomerisio/asserts/PRODUCT.md) inicializado via Impeccable com schema 1 e workflow `comp-first`.
 - **Dosséis Angulares de Palco (`.section-header-canopy`):** Assinatura visual de referência da Brasa Studio com `clip-path: polygon(0 0, 100% 0, 88% 100%, 12% 100%)`, degradê marrom escuro acetinado e iluminação superior âmbar nas 5 seções centrais (`Resultados`, `Diferenciais`, `Portfólio`, `Galeria` e `Depoimentos`).
 - **Iluminação Hero & Brasa no CTA:** Halo atmosférico laranja `#FF4B19` na primeira dobra e fagulhas incandescentes no bloco final de contato.
+- **Navegação Móvel Retrátil (Drawer):** Menu lateral com overlay e backdrop-filter, acionamento por botão hambúrguer responsivo (`.btn-menu-mobile`) e fechamento por tecla Escape ou clique externo.
+- **Auditoria de Integridade:** Suite automatizada de validação de formatação (`scripts/check_formatting.py`) e integridade de assets (`scripts/verify_all.py`).
 - **Repositório GitHub:** `https://github.com/lopesmidia002-jpg/gustavomerisio.git` (branch `main`).
 
 
