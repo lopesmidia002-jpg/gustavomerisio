@@ -1,6 +1,8 @@
 # Diretórios de rascunho e comparações temporárias
 scratch/
 *.log
+scripts/*.png
+scripts/*.jpg
 
 # Caches de ambiente e Python
 __pycache__/

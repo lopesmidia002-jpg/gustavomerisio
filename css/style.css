@@ -896,12 +896,12 @@ ul, ol {
 .hero-section::before {
   content: '';
   position: absolute;
-  top: -150px;
-  right: -90px;
-  width: 980px;
-  height: 860px;
-  background: radial-gradient(circle at 75% 30%, rgba(255, 75, 25, 0.50) 0%, rgba(210, 60, 10, 0.28) 35%, rgba(130, 30, 0, 0.10) 60%, transparent 80%);
-  filter: blur(60px);
+  top: -160px;
+  right: -100px;
+  width: 860px;
+  height: 820px;
+  background: radial-gradient(circle at 72% 32%, rgba(255, 75, 25, 0.46) 0%, rgba(210, 60, 10, 0.22) 34%, rgba(130, 30, 0, 0.06) 58%, transparent 76%);
+  filter: blur(65px);
   pointer-events: none;
   z-index: 0;
 }
@@ -925,47 +925,65 @@ ul, ol {
 .hero-badge-wrap {
   display: inline-flex;
   align-items: center;
-  gap: 0.625rem;
-  background-color: rgba(255, 75, 25, 0.08);
-  border: 1px solid rgba(255, 75, 25, 0.25);
-  padding: 0.35rem 0.85rem;
+  gap: 0.65rem;
+  background-color: rgba(255, 75, 25, 0.04);
+  border: 1px solid rgba(255, 75, 25, 0.32);
+  padding: 0.25rem 0.85rem 0.25rem 0.32rem;
   border-radius: var(--radius-pill);
-  margin-bottom: clamp(1.25rem, 2.5vw, 1.75rem);
+  margin-bottom: clamp(1.25rem, 2.2vw, 1.65rem);
   transition: border-color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .hero-badge-wrap:hover {
-  background-color: rgba(255, 75, 25, 0.12);
-  border-color: rgba(255, 75, 25, 0.4);
+  background-color: rgba(255, 75, 25, 0.08);
+  border-color: rgba(255, 75, 25, 0.45);
 }
 
 .hero-badge-pill {
-  background-color: var(--accent-orange);
-  color: var(--text-white);
+  background-color: #FF4B19;
+  color: #FFFFFF;
   font-size: 0.6875rem;
   font-weight: 700;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
   letter-spacing: 0.04em;
+  line-height: 1.1;
 }
 
 .hero-badge-text {
-  color: #FFA07A;
+  color: #C4C2BC;
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 
 .hero-title {
-  margin-bottom: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(2.6rem, 5.2vw, 4.25rem);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: clamp(1.25rem, 2.2vw, 1.65rem);
+}
+
+.hero-title .text-orange {
+  color: #FF4B19;
+  background: none;
+  -webkit-text-fill-color: #FF4B19;
 }
 
 .hero-description {
-  color: var(--text-secondary);
-  font-size: clamp(1rem, 1.25vw, 1.125rem);
-  line-height: 1.65;
-  max-width: 520px;
-  margin-bottom: clamp(1.75rem, 3.5vw, 2.5rem);
+  color: #8C8A85;
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  line-height: 1.55;
+  max-width: 540px;
+  margin-bottom: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+@media (max-width: 600px) {
+  .hero-sub-break {
+    display: none;
+  }
 }
 
 .hero-actions {
@@ -973,48 +991,48 @@ ul, ol {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0;
 }
 
 /* Grade de 4 Cartões de Marcas Parceiras */
 .hero-partners {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   padding-top: 0;
   border-top: none;
   width: auto;
+  margin-top: 2.25rem;
 }
 
 .hero-partner-card {
-  width: 58px;
-  height: 58px;
-  border-radius: 14px;
-  background-color: #0E0E0E;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: #0C0C0C;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
-  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .hero-partner-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   border-color: rgba(255, 75, 25, 0.35);
-  background-color: #141414;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6), 0 0 18px rgba(255, 75, 25, 0.15);
+  background-color: #121212;
 }
 
 .hero-partner-card img {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   opacity: 0.95;
   transition: transform var(--transition-fast);
 }
 
 .hero-partner-card:hover img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 /* Coluna Visual da Hero: Vídeo Frame e Compasso Orbital */

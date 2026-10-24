@@ -64,13 +64,13 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 - Menu: `Início`, `Sobre`, `Portfólio`, `Contato`, `FAQ`
 - Ação: `Fale com a gente`
 
-### Hero (Implementado)
-- Badge: `[NOVO] Agenda aberta para 2027`
-- Título: `Design que acende marcas criativas.`
-- Subtítulo: `Identidade, site e campanha para negócios criativos que querem presença memorável, com método claro e acabamento de ateliê.`
-- Ações: `Começar um projeto` / `Conheça a Brasa`
-- Marcas: 4 ícones parceiros minimalistas
-- Visual: `hero-craft-object.jpg` com estrela `✦`
+### Hero (Implementado — Calibração Passo 18)
+- Badge: `[NOVO] Agenda aberta para 2027` (pílula laranja com texto off-white em contorno âmbar)
+- Título: `Design que acende marcas criativas.` (segunda linha em laranja brasa sólido `#FF4B19` sem degradê)
+- Subtítulo: `Identidade, site e campanha para negócios criativos que\nquerem presença memorável, com método claro e acabamento\nde ateliê.` (quebra exata em 3 linhas)
+- Ações: `Começar um projeto` (pílula branca) / `Conheça a Brasa` (pílula acetinada escura)
+- Marcas: 4 cartões de 52x52px (`[O]`, `[▲]`, `[⬭]`, `[≈]`) com ícones vetoriais autênticos
+- Visual: `hero-craft-object.jpg` em frame de vídeo com botão Play e bússola orbital de 154px
 
 ### Apresentação "Sobre a Brasa" (Implementado)
 - Tag: `• Sobre a Brasa`

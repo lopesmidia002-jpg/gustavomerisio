@@ -141,3 +141,17 @@
     - Anel externo pontilhado (`r=62`, `stroke-dasharray="2 4.5"`), anel interno contínuo (`r=42`) e eixos cardinais de mira estendidos com traçado fino e nítido.
     - Filtro de brilho sutil com desfoque refinado (`stdDeviation="2.5"`), eliminando distorções de escala e superexposição.
   - Validação 100% no Docker com captura via headless Chrome CDP e aprovação completa em `check_formatting.py` (0 erros) e `verify_all.py` (53 assets HTTP 200).
+
+- [x] **Passo 18: Calibração de Fidelidade Extrema da Coluna Hero (Tipografia, Quebra do Subtítulo, Badge e Cartões de Marcas)**
+  - Calibração do badge de status (`.hero-badge-wrap`): cápsula com borda suave `rgba(255, 75, 25, 0.32)`, pílula interna `NOVO` em vermelho-laranja sólido `#FF4B19` com cantos redondos `border-radius: var(--radius-pill)` e tipografia neutra em off-white `#C4C2BC` para "Agenda aberta para 2027".
+  - Título editorial (`.hero-title`): `Design que acende` em branco puro com espaçamento entre letras reduzido (`letter-spacing: -0.03em`) e `marcas criativas.` em laranja brasa sólido `#FF4B19` sem degradê ou atenuação.
+  - Subtítulo (`.hero-description`): quebra de linha milimétrica em 3 linhas com tags responsivas (`Identidade, site e campanha para negócios criativos que<br class="hero-sub-break">querem presença memorável, com método claro e acabamento<br class="hero-sub-break">de ateliê.`), cor editorial cinza quente `#8C8A85` e largura máxima de 540px.
+  - Cartões de marcas parceiras (`.hero-partner-card`): redimensionamento para 52x52px, cantos arredondados de 12px, fundo acetinado `#0C0C0C`, borda sutil de 1px e gap de 12px (`0.75rem`).
+  - Criação de 4 ícones vetoriais SVG autênticos dedicados para a Hero:
+    - `assets/icons/hero-brand-circle.svg`: anel circular limpo e espesso `O` (sem ponto central).
+    - `assets/icons/hero-brand-triangle.svg`: triângulo sólido preenchido em branco puro `▲`.
+    - `assets/icons/hero-brand-capsule.svg`: cápsula dividida com cúpula superior e barra inferior arredondada `⬭`.
+    - `assets/icons/hero-brand-wave.svg`: dupla onda fluida com pontas arredondadas `≈`.
+  - Confinamento da iluminação atmosférica âmbar (`.hero-section::before`) no quadrante superior direito sobre o vídeo frame e o compasso orbital, garantindo contraste puro e fundo preto profundo `#050505` atrás da coluna de texto à esquerda.
+  - Validação 100% no Docker com headless Chrome CDP, 0 erros no `check_formatting.py` e 57/57 assets estáticos com status HTTP 200 OK via `verify_all.py`.
+

@@ -279,6 +279,30 @@ asserts/
 - **Validação Automatizada:**
   - Testes `check_formatting.py` (0 erros) e `verify_all.py` (53 assets HTTP 200) aprovados no Docker.
 
+### 4.20. Calibração de Fidelidade Extrema da Coluna Hero (Passo 18)
+- **Badge de Status Superior (`.hero-badge-wrap`):**
+  - Ajuste de proporções e cantos: pílula interna `NOVO` em vermelho-laranja sólido `#FF4B19` com `border-radius: var(--radius-pill)`, padding `0.2rem 0.55rem` e tipografia neutra em off-white `#C4C2BC` para "Agenda aberta para 2027", com borda sutil `rgba(255, 75, 25, 0.32)`.
+- **Tipografia do Título Editorial (`.hero-title`):**
+  - `Design que acende` em branco puro `#FFFFFF` com `letter-spacing: -0.03em` e `line-height: 1.06`.
+  - `marcas criativas.` em laranja brasa sólido `#FF4B19` (`background: none; -webkit-text-fill-color: #FF4B19`), eliminando qualquer degradê ou desbotamento.
+- **Subtítulo com Quebra Milimétrica de 3 Linhas (`.hero-description`):**
+  - Quebra de linha responsiva via `<br class="hero-sub-break">`:
+    Linha 1: `Identidade, site e campanha para negócios criativos que`
+    Linha 2: `querem presença memorável, com método claro e acabamento`
+    Linha 3: `de ateliê.`
+  - Cor editorial secundária cinza quente `#8C8A85`, `line-height: 1.55` e `max-width: 540px`.
+- **Cartões de Marcas Parceiras Compactos (`.hero-partner-card`):**
+  - Redimensionamento para 52x52px com cantos arredondados de 12px, fundo acetinado `#0C0C0C`, borda sutil de 1px e gap de 12px (`0.75rem`).
+  - Criação de 4 ícones vetoriais SVG dedicados e autênticos:
+    - `assets/icons/hero-brand-circle.svg`: anel circular limpo `O` com espessura de 2.6px (sem ponto central).
+    - `assets/icons/hero-brand-triangle.svg`: triângulo sólido preenchido em branco `#FFFFFF` `▲`.
+    - `assets/icons/hero-brand-capsule.svg`: cápsula dividida com cúpula superior e barra inferior arredondada `⬭`.
+    - `assets/icons/hero-brand-wave.svg`: dupla onda sinusoidal paralela `≈`.
+- **Iluminação Atmosférica Delimitada:**
+  - Confinamento do degradê âmbar no topo direito da Hero (`.hero-section::before`), garantindo contraste puro com fundo preto profundo `#050505` atrás da coluna de conteúdo da esquerda.
+- **Validação Automatizada:**
+  - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 57 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
+
 ---
 
 ## 5. Acessibilidade e SEO
