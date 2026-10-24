@@ -83,11 +83,15 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 - Título: `Resultados que aparecem no caixa e na marca.`
 - Cartões: `Casa Ocre` (+38% vendas online), `Torra Rubi` (+37% custo lead, +45% B2B), `Âmbar Joias` (+64% visitas, +28% ticket médio)
 
-### Processo "Do briefing ao ar" (Implementado)
+### Processo "Do briefing ao ar" (Implementado — Calibração Passo 21)
 - Tag: `• Como trabalhamos`
 - Título: `Do briefing ao ar, sem atalhos.`
-- 3 Etapas: `Imersão`, `Criação`, `Entrega`
-- Imagem: `process-workbench.jpg`
+- Subtítulo: `Um processo curto, com entregas visíveis a cada semana, para você acompanhar a ideia virando produto.`
+- 3 Etapas Estruturadas:
+  1. `Imersão` (Ícone de lupa em caixa escura, badge `Etapa 1`, tags `Diagnóstico de marca` e `Plano de projeto`)
+  2. `Criação` (Ícone de caneta em caixa escura, badge `Etapa 2`, tags `Revisões semanais` e `Protótipo navegável`)
+  3. `Entrega` (Ícone de caneta em caixa escura, badge `Etapa 3`, tags `Suporte pós-lançamento` e `Guia de marca`, botão sólido `Agendar conversa` e ornamento de bússola orbital radiante integrado no canto inferior direito)
+- Fotografia Zenital: `process-materials.jpg` (mostruários táteis, tecidos e placa de latão em bancada de ateliê, formato 1:1 com 480px, cantos de 20px e reflexo inferior em brasa incandescente, alinhada no topo com o Card 1)
 
 ### Diferenciais do Estúdio (Implementado)
 - Tag: `• Diferenciais`

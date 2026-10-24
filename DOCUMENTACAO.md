@@ -324,6 +324,19 @@ asserts/
 - **Validação Automatizada:**
   - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 61 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
 
+### 4.23. Alinhamento Pixel a Pixel da Seção de Processo ("Do briefing ao ar, sem atalhos") (Passo 21)
+- **Fotografia Autêntica de Materiais Táteis (`assets/images/process-materials.jpg`):**
+  - Fotografia autêntica em plano zenital extraída do modelo de referência, retratando o manuseio de mostruários de tecidos, cartelas de cores e placa de latão escovado em bancada de ateliê.
+  - Formato quadrado 1:1 (`width: 480px`, `aspect-ratio: 1 / 1`), cantos arredondados de 20px, borda sutil de 1px e efeito luminoso de reflexo na base do cartão (`.process-image-wrap::after`) simulando calor de brasa.
+  - Eliminação de qualquer fundo marrom ou bloco lateral estranho, unificando a área no preto profundo `#050505`.
+- **Reestruturação Semântica de Alinhamento:**
+  - Separação entre o cabeçalho (`.process-header`) e a grade principal de conteúdo (`.process-grid`), garantindo que o topo da fotografia de materiais fique rigorosamente alinhado com o topo do Card 1 (`Imersão`).
+- **Cartões de Etapas Sequenciais e Bússola Orbital Integrada:**
+  - Cartões (`.process-step-card`) com fundo acetinado `#0B0B0B`, borda discreta de 1px e topo com ícone em caixa escura arredondada à esquerda e badge pill `Etapa 1`, `Etapa 2` e `Etapa 3` à direita.
+  - No Card 3 (`Entrega`), integração do botão de conversão `Agendar conversa` à esquerda e do ornamento de bússola orbital radiante (`assets/icons/compass-star.svg`) ancorado no canto inferior direito, com corte natural na borda do cartão (`overflow: hidden;`) e sombra suave em brasa incandescente.
+- **Validação Automatizada:**
+  - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 59 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
+
 ---
 
 ## 5. Acessibilidade e SEO

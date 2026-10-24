@@ -174,5 +174,14 @@
   - Preservação intacta de todos os elementos da dobra: título, subtítulo em 3 linhas, botões de ação, os 6 cartões de marcas parceiras (`[O]`, `[▲]`, `[⬭]`, `[≈]`, `[◇]`, `[⸬]`), vídeo frame e compasso orbital radiante.
   - Validação 100% no Docker com headless Chrome CDP, 0 erros no `check_formatting.py` e 61/61 assets estáticos com status HTTP 200 OK via `verify_all.py`.
 
-
-
+- [x] **Passo 21: Alinhamento Pixel a Pixel da Seção de Processo ("Do briefing ao ar, sem atalhos")**
+  - Extração da fotografia autêntica de alta resolução do modelo (`assets/images/process-materials.jpg`, bancada de trabalho em plano zenital com mãos manuseando mostruários, cartelas de tecidos e chapa de latão escovado).
+  - Reestruturação semântica do cabeçalho da seção (`.process-header`) e da grade principal (`.process-grid`):
+    - Alinhamento horizontal perfeito da borda superior da fotografia de materiais com o topo do Card 1 (`Imersão`).
+    - Aspect ratio quadrado 1:1, cantos arredondados de 20px, borda sutil de 1px e linha de reflexo quente em brasa incandescente na base do frame (`.process-image-wrap::after`).
+    - Eliminação completa de blocos marrons/laterais externos, mantendo fundo unificado em preto profundo `#050505`.
+  - Redesenho dos cartões de etapas sequenciais (`.process-step-card`):
+    - Linha superior com ícone em caixa quadrada escura arredondada à esquerda e badge pill `Etapa 1`, `Etapa 2` e `Etapa 3` à direita.
+    - Tipografia editorial com título em branco puro (`font-weight: 700`), descrição cinza neutro `#8C8A85` e pílulas de tags com acabamento acetinado.
+    - No Card 3 (`Entrega`), integração do botão pill sólido `Agendar conversa` à esquerda e do ornamento de bússola orbital radiante (`assets/icons/compass-star.svg`) ancorado no canto inferior direito com recorte natural na borda (`overflow: hidden;`) e sombra em brasa incandescente.
+  - Validação 100% no Docker via Chrome headless CDP, 0 erros no `check_formatting.py` e 59/59 assets estáticos com status HTTP 200 OK via `verify_all.py`.
