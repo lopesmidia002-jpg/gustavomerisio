@@ -313,6 +313,17 @@ asserts/
 - **Validação Automatizada:**
   - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 59 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
 
+### 4.22. Fundo Estático Autêntico da Hero com Arco Âmbar e Granulação 35mm (Passo 20)
+- **Imagem Atmosférica de Alta Resolução (`assets/images/hero-ambient-arc.jpg`, 2400x1200):**
+  - Arco luminoso contínuo com ápice superior em laranja brasa (`#E45E20`), flanco direito em âmbar pêssego suave (`#F4A274`) e início em brasa queimada (`#A8380E`).
+  - Granulação cinematográfica analógica de 35mm finamente sintetizada, conferindo acabamento tátil de estúdio autoral.
+  - Quadrante esquerdo e base da imagem com transição suave para preto puro `#050505`, proporcionando contraste editorial absoluto para o bloco de texto, botões e os 6 cartões de parceiros.
+- **Fundo Estático Exclusivo para a Seção Hero:**
+  - Aplicação estrita na classe `.hero-section`: `background-image: url('../assets/images/hero-ambient-arc.jpg'); background-size: cover; background-attachment: scroll;`.
+  - Desativação do antigo efeito dinâmico global `body::before` e do pseudo-elemento `.hero-section::before`, garantindo que o fundo permaneça fixo na primeira dobra e não vaze ou interfira nas demais seções da página.
+- **Validação Automatizada:**
+  - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 61 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
+
 ---
 
 ## 5. Acessibilidade e SEO

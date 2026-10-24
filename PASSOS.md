@@ -163,4 +163,16 @@
   - Ajuste de responsividade com `flex-wrap: wrap` no CSS, mantendo alinhamento horizontal contínuo em desktop (52x52px, raio 12px, gap 12px, fundo `#0C0C0C`).
   - Validação 100% no Docker com headless Chrome CDP, 0 erros no `check_formatting.py` e 59/59 assets estáticos com status HTTP 200 OK via `verify_all.py`.
 
+- [x] **Passo 20: Substituição do Fundo da Hero por Imagem Atmosférica com Arco Âmbar e Granulação 35mm**
+  - Criação da imagem de fundo autêntica em alta resolução (`assets/images/hero-ambient-arc.jpg`, 2400x1200):
+    - Arco halo de iluminação quente contínuo com ápice superior em laranja brasa (`#E45E20`), flanco direito em âmbar pêssego luminoso (`#F4A274`) e transição em brasa queimada (`#A8380E`).
+    - Granulação cinematográfica analógica de 35mm finamente calibrada para profundidade tátil sem banding.
+    - Área inferior e esquerda com transição suave para preto puro aveludado (`#050505`), preservando nitidez máxima nos textos e botões.
+  - Aplicação do fundo estático com escopo estritamente confinado à primeira dobra (`.hero-section`):
+    - `background-image: url('../assets/images/hero-ambient-arc.jpg'); background-size: cover; background-attachment: scroll;`
+    - Desativação do antigo degradê CSS dinâmico (`.hero-section::before` e `body::before`), garantindo que o fundo permaneça 100% estático e não vaze para as seções subsequentes.
+  - Preservação intacta de todos os elementos da dobra: título, subtítulo em 3 linhas, botões de ação, os 6 cartões de marcas parceiras (`[O]`, `[▲]`, `[⬭]`, `[≈]`, `[◇]`, `[⸬]`), vídeo frame e compasso orbital radiante.
+  - Validação 100% no Docker com headless Chrome CDP, 0 erros no `check_formatting.py` e 61/61 assets estáticos com status HTTP 200 OK via `verify_all.py`.
+
+
 

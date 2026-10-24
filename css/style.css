@@ -100,18 +100,11 @@ body {
   position: relative;
 }
 
-/* Iluminação ambiental radial de fundo (calor brasa premium) */
+/* Iluminação ambiental radial de fundo desativada em prol do fundo estático exclusivo da Hero */
 body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 65vw;
-  height: 60vh;
-  background: radial-gradient(circle at 85% 15%, rgba(255, 75, 25, 0.20) 0%, rgba(160, 40, 5, 0.08) 35%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
+
 
 img, picture, svg, video {
   display: block;
@@ -890,20 +883,17 @@ ul, ol {
   padding-top: calc(72px + clamp(2.5rem, 6vw, 5rem));
   padding-bottom: clamp(4rem, 7vw, 6.5rem);
   overflow: hidden;
+  background-color: #050505;
+  background-image: url('../assets/images/hero-ambient-arc.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
-/* Brilho âmbar atmosférico concentrado no topo direito da Hero */
+/* Fundo estático autêntico substitui o gradiente dinâmico anterior */
 .hero-section::before {
-  content: '';
-  position: absolute;
-  top: -160px;
-  right: -100px;
-  width: 860px;
-  height: 820px;
-  background: radial-gradient(circle at 72% 32%, rgba(255, 75, 25, 0.46) 0%, rgba(210, 60, 10, 0.22) 34%, rgba(130, 30, 0, 0.06) 58%, transparent 76%);
-  filter: blur(65px);
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 
 .hero-grid {

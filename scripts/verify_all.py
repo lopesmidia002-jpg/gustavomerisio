@@ -10,9 +10,9 @@ with urllib.request.urlopen(req) as resp:
 print(f"Page status: {status}")
 print(f"HTML size: {len(html)} bytes")
 
-# Extract all img src
+# Extract all img src and key background assets
 img_srcs = re.findall(r'<img[^>]+src=[\'"]([^\'"]+)[\'"]', html)
-all_assets = set(img_srcs + ['css/style.css', 'js/main.js'])
+all_assets = set(img_srcs + ['css/style.css', 'js/main.js', 'assets/images/hero-ambient-arc.jpg', 'assets/images/canopy-trapezoid.svg'])
 
 failed = []
 ok_count = 0
