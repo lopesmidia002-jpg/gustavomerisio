@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initMobileDrawer();
+  initPortfolioStackingCards();
   initGalleryLightbox();
   initFaqAccordion();
   initBackToTop();
@@ -228,7 +229,7 @@ function initScrollReveal() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const elementsToReveal = document.querySelectorAll(
-    '.result-card, .diff-card, .panoramic-card, .service-package-card, .plano-card, .testimonial-card, .gallery-card, .cta-card'
+    '.result-card, .diff-card, .service-package-card, .plano-card, .testimonial-card, .gallery-card, .cta-card'
   );
 
   if (!('IntersectionObserver' in window)) {
@@ -252,6 +253,109 @@ function initScrollReveal() {
     el.classList.add('reveal-on-scroll');
     observer.observe(el);
   });
+}
+
+/**
+ * Efeito Stacking Cards com Scroll Progress Bar dinâmico
+ * Conforme o usuário faz a rolagem:
+ * - Cada cartão fica fixo no topo com position: sticky.
+ * - À medida que o cartão seguinte sobe e se sobrepõe, o anterior sofre escala suave (1 para 0.94) e atenuação tridimensional.
+ * - A barra de progresso horizontal em degradê laranja/âmbar se preenche em tempo real baseada no progresso da rolagem.
+ */
+function initPortfolioStackingCards() {
+  const stack = document.querySelector('.portfolio-panoramic-stack');
+  const cards = Array.from(document.querySelectorAll('.panoramic-card'));
+  if (!stack || cards.length === 0) return;
+
+  const offsetStep = 18; // Deslocamento em px entre topos de cartões empilhados
+  cards.forEach((card, index) => {
+    card.style.setProperty('--stack-offset', `${index * offsetStep}px`);
+  });
+
+  let ticking = false;
+
+  const updateStack = () => {
+    const stickyTopBase = 90;
+
+    cards.forEach((card, i) => {
+      const rect = card.getBoundingClientRect();
+      const fillBar = card.querySelector('.progress-bar-fill');
+      const stickyTop = stickyTopBase + (i * offsetStep);
+      const isPinned = rect.top <= stickyTop + 2;
+
+      const nextCard = cards[i + 1];
+
+      let progress = 0;
+      let scale = 1;
+      let brightness = 1;
+
+      if (nextCard) {
+        const nextRect = nextCard.getBoundingClientRect();
+        const nextStickyTop = stickyTopBase + ((i + 1) * offsetStep);
+
+        if (isPinned) {
+          // Distância restante para o próximo cartão alcançar sua posição fixa
+          const distanceToNext = nextRect.top - nextStickyTop;
+          // Intervalo de transição correspondente à altura do cartão mais margem
+          const scrollSpan = Math.max(150, card.offsetHeight + 40);
+
+          // Fator de sobreposição de 0 a 1
+          const factor = Math.min(1, Math.max(0, 1 - (distanceToNext / scrollSpan)));
+          progress = factor;
+
+          // Redução suave de escala (1 para ~0.94) e atenuação sutil de brilho (1 para ~0.70)
+          scale = 1 - (factor * 0.055);
+          brightness = 1 - (factor * 0.30);
+        } else {
+          progress = 0;
+          scale = 1;
+          brightness = 1;
+        }
+      } else {
+        // Último cartão da pilha: preenche durante a permanência no topo
+        if (isPinned) {
+          const parentRect = stack.getBoundingClientRect();
+          const remainingScroll = parentRect.bottom - (stickyTop + card.offsetHeight);
+          const scrollSpan = Math.max(120, card.offsetHeight * 0.6);
+
+          if (remainingScroll <= 0) {
+            progress = 1;
+          } else {
+            progress = Math.min(1, Math.max(0, 1 - (remainingScroll / scrollSpan)));
+          }
+        } else {
+          progress = 0;
+        }
+        scale = 1;
+        brightness = 1;
+      }
+
+      // Atualiza largura da barra de progresso em gradiente
+      if (fillBar) {
+        fillBar.style.width = `${Math.min(100, Math.max(0, progress * 100)).toFixed(1)}%`;
+      }
+
+      // Aplica escala e iluminação (respeitando acessibilidade)
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        card.style.transform = `scale(${scale.toFixed(4)})`;
+        card.style.filter = brightness < 1 ? `brightness(${brightness.toFixed(3)})` : 'none';
+      }
+    });
+  };
+
+  const onScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateStack();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  updateStack();
 }
 
 

@@ -337,6 +337,26 @@ asserts/
 - **Validação Automatizada:**
   - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 59 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
 
+### 4.24. Portfólio com Stacking Cards (Scroll Pinned Deck) e Scroll Progress Bar (Passo 22)
+- **Comportamento e Animação de Scroll (Stacking Cards):**
+  - Implementação pura em CSS e JavaScript acelerado por GPU (`requestAnimationFrame`), eliminando dependências pesadas externas e garantindo taxa estável de 60 FPS.
+  - Cada cartão possui `position: sticky; top: calc(90px + var(--stack-offset, 0px))` ancorando-se confortavelmente abaixo do cabeçalho fixo, com deslocamento escalonado `--stack-offset: ${index * 18}px`.
+  - Margem inferior responsiva `margin-bottom: clamp(6rem, 16vh, 12rem)` entre os cartões para proporcionar distância de rolagem natural durante a qual o cartão permanece fixado.
+  - Quando o cartão subsequente sobe e se sobrepõe, o cartão anterior tem sua escala reduzida suavemente de `scale(1)` para `scale(0.945)` com leve escurecimento em `filter: brightness(0.70)`, gerando uma sensação tátil de profundidade tridimensional em camadas (*stacked deck*).
+  - O ponto de origem da transformação é fixado no topo (`transform-origin: center top`), garantindo que o topo dos cartões anteriores continue visível em cascata ordenada.
+- **Scroll Progress Bar Dinâmica no Rodapé de Cada Card:**
+  - Barra horizontal perfeitamente integrada no rodapé de cada cartão com canal escuro translúcido (`rgba(255, 255, 255, 0.08)`) e cantos arredondados em pílula.
+  - Indicador ativo com degradê quente característico da Brasa (`linear-gradient(90deg, #D43000, #FF5514, #FFA83B)`) e aura luminosa (`box-shadow: 0 0 14px rgba(255, 75, 25, 0.7)`).
+  - O preenchimento da barra é recalculado dinamicamente em tempo real (de `0%` a `100%`) à medida que a seção e o respectivo cartão avançam no campo de visualização da janela.
+- **Fotografias Panorâmicas Autênticas de Alta Resolução:**
+  - Extraídas diretamente do modelo fotográfico de referência em alta definição e salvas em `assets/images/`:
+    - `portfolio-casa-ocre-wide.jpg` (1200x490): Prateleiras de cerâmica autoral com iluminação quente cenográfica e vaso em brasa ao centro.
+    - `portfolio-torra-rubi-wide.jpg` (1200x501): 5 embalagens kraft e terracota alinhadas na bancada com etiquetas brancas limpas e máquina de torra escura.
+    - `portfolio-lume-wide.jpg` (1200x474): Ateliê de arquitetura com mesa de maquete iluminada e luz dourada de pôr do sol no horizonte através dos janelões.
+  - Atributos `loading="eager"` e `decoding="async"` configurados para garantir carregamento instantâneo sem flicker durante o empilhamento fixo.
+- **Validação Automatizada:**
+  - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 59 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
+
 ---
 
 ## 5. Acessibilidade e SEO

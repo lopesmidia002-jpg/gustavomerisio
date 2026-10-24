@@ -185,3 +185,18 @@
     - Tipografia editorial com título em branco puro (`font-weight: 700`), descrição cinza neutro `#8C8A85` e pílulas de tags com acabamento acetinado.
     - No Card 3 (`Entrega`), integração do botão pill sólido `Agendar conversa` à esquerda e do ornamento de bússola orbital radiante (`assets/icons/compass-star.svg`) ancorado no canto inferior direito com recorte natural na borda (`overflow: hidden;`) e sombra em brasa incandescente.
   - Validação 100% no Docker via Chrome headless CDP, 0 erros no `check_formatting.py` e 59/59 assets estáticos com status HTTP 200 OK via `verify_all.py`.
+
+- [x] **Passo 22: Stacking Cards no Portfólio com Scroll Progress Bar Dinâmico e Imagens Autênticas**
+  - Implementação de efeito de empilhamento de cartões fixos via rolagem (*Stacking Cards* / *Stacked Pinned Deck*):
+    - `position: sticky; top: calc(90px + var(--stack-offset, 0px))` com deslocamento em cascata `--stack-offset: ${index * 18}px`.
+    - Transição tridimensional suave com escala reduzindo de `scale(1)` para `scale(0.945)` e sutil escurecimento (`filter: brightness(0.70)`) no cartão anterior à medida que o seguinte sobe e se sobrepõe.
+    - Transform origin calibrado no topo (`transform-origin: center top`) e aceleração por hardware via GPU (`will-change: transform, filter; transform: translate3d(0, 0, 0)`).
+  - Barra de progresso de scroll dinâmica integrada no rodapé de cada cartão:
+    - Preenchimento em tempo real de `0%` a `100%` sincronizado via `requestAnimationFrame` de acordo com a visibilidade de scroll do cartão correspondente.
+    - Gradiente de fogo autêntico (`background: linear-gradient(90deg, #D43000, #FF5514, #FFA83B)`) com brilho em brasa incandescente (`box-shadow: 0 0 14px rgba(255, 75, 25, 0.7)`).
+  - Extração e aplicação das 3 fotografias panorâmicas autênticas da imagem de referência:
+    - Card 1 (`Casa Ocre` · `2026`): Prateleiras de ateliê cerâmico com pote iluminado em brasa quente central (`assets/images/portfolio-casa-ocre-wide.jpg`).
+    - Card 2 (`Torra Rubi` · `2026`): 5 sacos kraft e terracota de café alinhados na bancada de torrefação (`assets/images/portfolio-torra-rubi-wide.jpg`).
+    - Card 3 (`Lume Arquitetura` · `2025`): Maquete de arquitetura sob horizonte crepuscular e luz solar dourada (`assets/images/portfolio-lume-wide.jpg`).
+    - Otimização com `loading="eager"` e `decoding="async"` para renderização instantânea durante o scroll sticky contínuo.
+  - Validação 100% no Docker via headless Chrome CDP com testes de scroll dinâmico, 0 erros no `check_formatting.py` e 59/59 assets estáticos retornando HTTP 200 OK via `verify_all.py`.

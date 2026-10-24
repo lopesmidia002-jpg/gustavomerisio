@@ -109,14 +109,18 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
   4. `Retorno rápido` (`why-retorno.jpg`)
   5. `Publicação assistida` (`why-publicacao.jpg`)
 
-### Portfólio Panorâmico (Implementado)
+### Portfólio Panorâmico — Stacking Cards & Scroll Progress (Implementado — Calibração Passo 22)
 - Tag: `• Portfólio`
 - Título: `Projetos selecionados que acendem marcas.`
 - Subtítulo: `Uma seleção de trabalhos recentes, de lojas autorais a escritórios de serviço, em setores diferentes.`
-- 3 Blocos Panorâmicos:
-  1. `Casa Ocre` · `2026` (`portfolio-casa-ocre-wide.jpg`, progresso 65%)
-  2. `Torra Rubi` · `2026` (`portfolio-torra-rubi-wide.jpg`, progresso 82%)
-  3. `Lume Arquitetura` · `2025` (`portfolio-lume-wide.jpg`, progresso 50%)
+- Efeito de Empilhamento (*Stacking Cards* / *Pinned Deck*):
+  - Fixação vertical sequencial no topo da janela com `position: sticky; top: calc(90px + var(--stack-offset, 0px))`.
+  - Transição de profundidade 3D em camadas: redução suave para `scale(0.945)` e leve escurecimento (`brightness(0.70)`) no cartão anterior conforme o próximo sobe e se sobrepõe.
+  - Barra de progresso de rolagem dinâmica horizontal no rodapé de cada cartão, preenchendo de `0%` a `100%` em gradiente laranja/âmbar incandescente (`#D43000` -> `#FF5514` -> `#FFA83B`) sincronizado via `requestAnimationFrame`.
+- 3 Cartões Panorâmicos com Fotografias Autênticas em Alta Resolução:
+  1. `Casa Ocre` · `2026` (`portfolio-casa-ocre-wide.jpg` — Ateliê de cerâmica com iluminação quente de janela e vaso incandescente central; tags `E-commerce` e `Identidade`)
+  2. `Torra Rubi` · `2026` (`portfolio-torra-rubi-wide.jpg` — 5 embalagens kraft e terracota de cafés especiais na bancada de torrefação; tags `Marca` e `Embalagem`)
+  3. `Lume Arquitetura` · `2025` (`portfolio-lume-wide.jpg` — Maquete arquitetônica iluminada sob crepúsculo dourado no horizonte; tags `Site institucional` e `Direção de arte`)
 
 ### Serviços Completos
 - Tag: `• Serviços`
