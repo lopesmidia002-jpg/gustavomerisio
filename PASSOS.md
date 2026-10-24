@@ -79,4 +79,12 @@
   - Aperfeiçoamento do efeito de brasa incandescente no bloco de conversão CTA Final (`.cta-card`) com reflexo radial de calor e fagulhas emanando da base do cartão.
   - Validação completa 100% no Docker através do Chrome headless (1600x18000) e teste automatizado de 52 assets estáticos retornando HTTP 200 OK.
 
+- [x] **Passo 10: Criação do README.md, .gitignore e Publicação no Repositório Remoto GitHub**
+  - Criação do arquivo canônico `.gitignore` ignorando arquivos de rascunho temporários (`scratch/`), logs, arquivos de SO e caches.
+  - Criação do script permanente de verificação automatizada `scripts/verify_all.py`.
+  - Criação do `README.md` completo, com badges, tabela das 15 seções, arquitetura visual, guia Docker e métricas de acessibilidade.
+  - Configuração do remote origin (`https://github.com/lopesmidia002-jpg/gustavomerisio.git`).
+  - Commit inicial e sincronização bem-sucedida da branch `main` no GitHub.
+
+
 

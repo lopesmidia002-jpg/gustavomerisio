@@ -212,6 +212,16 @@ asserts/
 - **Validação de Renderização:**
   - Captura automatizada full-page em resolução nativa (1600x18000px) e verificação de integridade 100% em Docker.
 
+### 4.15. Documentação Canônica, Git e Publicação GitHub (Passo 10)
+- **Arquivo `.gitignore`:**
+  - Configurado para isolar diretórios de testes temporários (`scratch/`), dumps de comparação gráfica, arquivos do sistema operacional (`.DS_Store`, `Thumbs.db`) e caches.
+- **Script Permanente `scripts/verify_all.py`:**
+  - Script autônomo em Python mantido no repositório para assegurar a testabilidade contínua de status HTTP 200 de todos os 52 assets estáticos via Docker.
+- **Arquivo `README.md` Completo:**
+  - Visão geral completa do projeto, identidade visual, tabela detalhada das 15 seções, guia de início rápido via Docker Compose, instruções de verificação e métricas de acessibilidade/SEO.
+- **Publicação no GitHub:**
+  - Repositório remoto configurado em `https://github.com/lopesmidia002-jpg/gustavomerisio.git`, branch `main` sincronizada com sucesso.
+
 ---
 
 ## 5. Acessibilidade e SEO
