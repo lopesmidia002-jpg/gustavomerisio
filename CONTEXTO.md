@@ -29,7 +29,7 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 
 ### Ativos Visuais e Fotografias (`assets/images/`)
 - `hero-craft-object.jpg`: Fotografia cinematográfica de alta resolução em proporção 16:11 exibindo peça cerâmica artesanal sob iluminação cenográfica de ateliê, câmera em silhueta e botão Play central em vidro fosco.
-- `sobre-artisan.jpg`: Fotografia de alta resolução em proporção 4:5 retratando o designer em bancada com laptop e amostras de cores sob iluminação de ateliê.
+- `sobre-artisan.jpg`: Fotografia autêntica de alta resolução retratando artesão em avental escuro trabalhando em bancada de couro e madeira sob luminária de latão e ferramentas de ateliê.
 - `result-casa-ocre.jpg`: Vaso artesanal minimalista em cerâmica terracota escura sob feixe de luz âmbar direcional.
 - `result-torra-rubi.jpg`: Xícara cerâmica de café espresso especial com crema espessa e grãos tostados sobre tábua de ardósia.
 - `result-ambar-joias.jpg`: Macro fotografia de aliança artesanal em ouro martelado sobre rocha vulcânica escura texturizada.
@@ -53,7 +53,7 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 - `star.svg`: Estrela sólida para avaliações.
 - `step-search.svg`, `step-pen.svg`, `step-rocket.svg`: Ícones das etapas de processo.
 - `icon-chart.svg`, `icon-layers.svg`, `icon-zap.svg`, `icon-eye.svg`, `icon-calendar.svg`, `icon-smartphone.svg`: Ícones dos 6 diferenciais de estúdio.
-- `brand-circle.svg`, `brand-triangle.svg`, `brand-column.svg`, `brand-wave.svg`: Quatro símbolos vetoriais nítidos de marcas atendidas (`O`, `▲`, `⬭`, `≈`).
+- `brand-circle.svg`, `brand-triangle.svg`, `brand-column.svg`, `brand-wave.svg`: Quatro símbolos vetoriais nítidos de marcas atendidas (`☉`, `△`, `Ⅲ`, `≈`).
 
 ---
 

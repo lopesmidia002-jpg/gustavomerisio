@@ -114,3 +114,11 @@
     - Ativação e exibição do botão hambúrguer `.btn-menu-mobile` e estilos completos para o menu lateral retrátil (`.mobile-drawer` e `.mobile-drawer-overlay`).
     - Ocultação do botão secundário de contato em telas ultrapequenas `<= 520px` para garantir visual 100% limpo, equilibrado e sem transbordamento horizontal.
   - Validação 100% no Docker com headless Chrome (viewports desktop e mobile 375x812) e `verify_all.py` (53 assets com status HTTP 200 OK).
+
+- [x] **Passo 15: Calibração Pixel a Pixel da Seção "Sobre a Brasa" com a Fotografia Original do Artesão e Símbolos de Marcas**
+  - Integração da fotografia autêntica de alta resolução do artesão de ateliê com avental, bancada de couro/madeira, luminária de latão e cadernos de projeto (`assets/images/sobre-artisan.jpg`).
+  - Remoção da barra de brilho inferior intrusiva da moldura (`.sobre-image-wrap::after`), deixando a borda limpa, acetinada e com curvatura exata de raio 20px.
+  - Calibração de tipografia e quebras de linha: título `Marcas mais fortes,\nimpressões que ficam.` e parágrafo descritivo em 3 linhas com largura máxima de 470px.
+  - Botão de ação `Como trabalhamos` com brilho de brasa quente emanando da base (`box-shadow: 0 4px 20px rgba(255, 75, 25, 0.42)`), divisor vertical translúcido e bloco de 5 estrelas brancas.
+  - Alinhamento dos 3 símbolos vetoriais de marcas parceiras com o modelo autêntico: `Casa Ocre` com círculo pontilhado (`☉`), `Torra Rubi` com triângulo vazado (`△`) e `Âmbar Joias` com três colunas clássicas romanas (`Ⅲ`).
+  - Validação 100% no Docker com inspeção visual por captura de tela e aprovação nos testes `check_formatting.py` e `verify_all.py` (53 assets HTTP 200).

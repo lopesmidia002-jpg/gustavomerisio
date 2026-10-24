@@ -240,6 +240,20 @@ asserts/
 - **Suite de Validação Automatizada (`scripts/check_formatting.py`):**
   - Parser autônomo em Python para verificação de balanceamento de tags HTML, verificação de existência de âncoras internas, presença obrigatória de `alt` em imagens e integridade de chaves/regras CSS (execução com 0 erros).
 
+### 4.17. Calibração Pixel a Pixel da Seção "Sobre a Brasa" e Símbolos de Marcas (Passo 15)
+- **Fotografia de Ateliê do Artesão:**
+  - Substituição da fotografia em `assets/images/sobre-artisan.jpg` pelo arquivo autêntico de alta resolução do artesão de avental em bancada de couro/madeira com luminária de latão.
+  - Ajuste de moldura para raio de 20px, eliminação da barra de brilho inferior intrusiva e adição de iluminação ambiente radial âmbar no fundo direito da seção (`.sobre-section::before`).
+- **Harmonização Tipográfica e Microinterações:**
+  - Ajuste na quebra de linha do título `Marcas mais fortes,\nimpressões que ficam.` e largura do parágrafo de 470px para diagramação em 3 linhas idêntica à referência visual.
+  - Brilho de brasa quente emanando da base do botão de ação `Como trabalhamos` (`box-shadow: 0 4px 20px rgba(255, 75, 25, 0.42)`).
+- **Vetorização Precisa dos Símbolos de Marcas Parceiras:**
+  - `brand-circle.svg`: Círculo com ponto central luminoso (`☉`).
+  - `brand-triangle.svg`: Triângulo vazado com traço de 2px (`△`).
+  - `brand-column.svg`: Três colunas clássicas com traços serifados (`Ⅲ`).
+- **Validação Completa no Docker:**
+  - Testes `check_formatting.py` e `verify_all.py` 100% aprovados com 53 assets estáticos retornando HTTP 200 OK.
+
 ---
 
 ## 5. Acessibilidade e SEO
