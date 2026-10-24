@@ -155,3 +155,12 @@
   - Confinamento da iluminação atmosférica âmbar (`.hero-section::before`) no quadrante superior direito sobre o vídeo frame e o compasso orbital, garantindo contraste puro e fundo preto profundo `#050505` atrás da coluna de texto à esquerda.
   - Validação 100% no Docker com headless Chrome CDP, 0 erros no `check_formatting.py` e 57/57 assets estáticos com status HTTP 200 OK via `verify_all.py`.
 
+- [x] **Passo 19: Expansão da Barra de Marcas Parceiras para 6 Cartões com Vetores Autênticos**
+  - Adição de dois novos símbolos vetoriais de marcas parceiras com o mesmo formato, geometria e estética:
+    - `assets/icons/hero-brand-diamond.svg`: losango vazado com recorte central milimétrico e traçado de 2.8px (`◇`).
+    - `assets/icons/hero-brand-dots.svg`: matriz 2x2 com 4 círculos sólidos em branco puro com espaçamento calibrado (`⸬`).
+  - Atualização da grade de cartões (`.hero-partners`) em `index.html` para 6 itens estruturados.
+  - Ajuste de responsividade com `flex-wrap: wrap` no CSS, mantendo alinhamento horizontal contínuo em desktop (52x52px, raio 12px, gap 12px, fundo `#0C0C0C`).
+  - Validação 100% no Docker com headless Chrome CDP, 0 erros no `check_formatting.py` e 59/59 assets estáticos com status HTTP 200 OK via `verify_all.py`.
+
+

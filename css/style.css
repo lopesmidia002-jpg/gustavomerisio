@@ -994,7 +994,7 @@ ul, ol {
   margin-bottom: 0;
 }
 
-/* Grade de 4 Cartões de Marcas Parceiras */
+/* Grade de 6 Cartões de Marcas Parceiras */
 .hero-partners {
   display: flex;
   align-items: center;
@@ -1003,6 +1003,7 @@ ul, ol {
   border-top: none;
   width: auto;
   margin-top: 2.25rem;
+  flex-wrap: wrap;
 }
 
 .hero-partner-card {

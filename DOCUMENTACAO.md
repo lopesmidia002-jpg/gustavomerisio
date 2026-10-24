@@ -303,6 +303,16 @@ asserts/
 - **Validação Automatizada:**
   - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 57 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
 
+### 4.21. Expansão da Barra de Marcas Parceiras para 6 Cartões (Passo 19)
+- **Vetorização e Inclusão de 2 Novos Símbolos Autênticos:**
+  - `assets/icons/hero-brand-diamond.svg`: Losango vazado geométrico (`◇`) com rotação simétrica a 45 graus, traçado nítido de 2.8px em branco puro `#FFFFFF` e recorte interior proporcional.
+  - `assets/icons/hero-brand-dots.svg`: Matriz simétrica 2x2 com 4 círculos preenchidos (`⸬`) com raio de 3.4px e espaçamento uniforme de 1.6px.
+- **Padronização Visual Completa da Barra (`.hero-partners`):**
+  - Todos os 6 cartões (`.hero-partner-card`) mantêm a mesma identidade de ateliê: dimensões 52x52px, cantos arredondados de 12px, fundo escuro acetinado `#0C0C0C`, borda sutil de 1px e gap horizontal de 12px (`0.75rem`).
+  - Suporte responsivo com `flex-wrap: wrap` no CSS para telas pequenas, mantendo linha contínua e equilibrada no desktop.
+- **Validação Automatizada:**
+  - 100% no Docker, com 0 erros no `check_formatting.py` e todos os 59 assets estáticos retornando HTTP 200 OK via `verify_all.py`.
+
 ---
 
 ## 5. Acessibilidade e SEO
