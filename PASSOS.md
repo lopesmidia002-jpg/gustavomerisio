@@ -122,3 +122,13 @@
   - Botão de ação `Como trabalhamos` com brilho de brasa quente emanando da base (`box-shadow: 0 4px 20px rgba(255, 75, 25, 0.42)`), divisor vertical translúcido e bloco de 5 estrelas brancas.
   - Alinhamento dos 3 símbolos vetoriais de marcas parceiras com o modelo autêntico: `Casa Ocre` com círculo pontilhado (`☉`), `Torra Rubi` com triângulo vazado (`△`) e `Âmbar Joias` com três colunas clássicas romanas (`Ⅲ`).
   - Validação 100% no Docker com inspeção visual por captura de tela e aprovação nos testes `check_formatting.py` e `verify_all.py` (53 assets HTTP 200).
+
+- [x] **Passo 16: Calibração de Fidelidade Extrema do Cabeçalho Dossel Angular da Seção Resultados (`#resultados`)**
+  - Criação do fundo vetorial escalável SVG em trapézio angular (`assets/images/canopy-trapezoid.svg`) com `preserveAspectRatio="none"` e `vector-effect="non-scaling-stroke"`, eliminando falhas de renderização ou corte de bordas por `clip-path`.
+  - Geometria matemática exata proporcional ao modelo visual: topo com 1000 unidades, base com 760 unidades (proporção 76% idêntica aos 506px/666px medidos no modelo de 1024px) e linhas laterais inclinadas a ~13-15°.
+  - Traçado nítido de 1.2px nas bordas chanfradas (`rgba(255, 75, 25, 0.22)`) e linha horizontal de conexão âmbar de 1.5px na base (`rgba(255, 75, 25, 0.40)`).
+  - Iluminação atmosférica superior âmbar (`radial-gradient`) com difusão sutil e gradiente vertical em marrom escuro acetinado (`#261209` a `#070403`).
+  - Iluminação ambiental radial no canto superior direito de fundo (`.results-section::before` com raio de 55vw e luz âmbar suave).
+  - Tag pill `• Resultados` com fundo translúcido sutil (`rgba(255, 255, 255, 0.04)`), borda âmbar fina e ponto circular brilhante (`#FF4B19`).
+  - Tipografia de alta precisão: título em duas linhas limpas (`Resultados que aparecem\nno caixa e na marca.`), subtítulo com quebra exata (`Cada entrega nasce com um objetivo claro e um jeito de medir. Veja alguns\nnúmeros de projetos recentes.`) e botão pílula `Agendar 15 minutos` com brilho inferior suave (`box-shadow: 0 4px 22px rgba(255, 75, 25, 0.45)`).
+  - Validação 100% no Docker com captura visual via headless Chrome CDP e aprovação completa em `check_formatting.py` (0 erros) e `verify_all.py` (53 assets HTTP 200).

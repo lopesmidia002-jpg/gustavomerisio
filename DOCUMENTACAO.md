@@ -254,6 +254,21 @@ asserts/
 - **Validação Completa no Docker:**
   - Testes `check_formatting.py` e `verify_all.py` 100% aprovados com 53 assets estáticos retornando HTTP 200 OK.
 
+### 4.18. Calibração de Fidelidade Extrema do Dossel Angular de Resultados (Passo 16)
+- **Fundo Vetorial Escalável em Trapézio Angular (`assets/images/canopy-trapezoid.svg`):**
+  - Superação das limitações do `clip-path` (que cortava bordas e sombras de elementos filhos) através de um arquivo vetorial SVG dedicado com `preserveAspectRatio="none"` e `vector-effect="non-scaling-stroke"`.
+  - Geometria calculada: topo de 1000 unidades, base conectada de 760 unidades (76% de largura, reproduzindo exatamente os 506px/666px do modelo visual em 1024px).
+  - Traçado nítido de 1.2px nas laterais chanfradas (`rgba(255, 75, 25, 0.22)`) e traço de destaque horizontal na base com 1.5px (`rgba(255, 75, 25, 0.40)`).
+  - Preenchimento em degradê vertical acetinado em marrom queimado escuro (`#261209` a `#070403`) com iluminação superior de palco em âmbar (`radial-gradient`).
+- **Iluminação Atmosférica de Fundo:**
+  - Inserção de pseudo-elemento `.results-section::before` com degradê radial âmbar de 55vw no canto superior direito, integrando a atmosfera escura do ateliê.
+- **Tipografia e Botão de Ação:**
+  - Tag pill `• Resultados` estilizada com fundo translúcido `rgba(255, 255, 255, 0.04)`, borda âmbar fina e ponto circular brilhante `#FF4B19`.
+  - Título em duas linhas com tracking ajustado (`-0.025em`) e subtítulo com quebra responsiva exata (`Cada entrega nasce com um objetivo claro e um jeito de medir. Veja alguns\nnúmeros de projetos recentes.`).
+  - Botão pílula `Agendar 15 minutos` com dimensões calibradas (`padding: 0.55rem 1.5rem`), tipografia limpa e brilho âmbar difuso na base (`box-shadow: 0 4px 22px rgba(255, 75, 25, 0.45)`).
+- **Validação Automatizada:**
+  - Aprovado no `check_formatting.py` (0 erros) e no `verify_all.py` (53 assets retornando HTTP 200 OK no Docker).
+
 ---
 
 ## 5. Acessibilidade e SEO
