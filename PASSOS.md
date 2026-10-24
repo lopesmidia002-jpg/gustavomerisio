@@ -90,5 +90,9 @@
   - Substituição da barra simples de parceiros por 4 cartões/tiles escuros de marcas parceiras (`.hero-partner-card`), medindo 58x58px, raio 14px, fundo acetinado `#0E0E0E` e borda de 1px com os símbolos `O` (círculo espesso), `▲` (triângulo sólido), `⬭` (cápsula dividida) e `≈` (dupla onda fluida).
   - Substituição da imagem do vaso cerâmico pelo frame de vídeo cinematográfico autêntico do modelo (`.hero-video-frame`, raio 18px, proporção 16:11) com iluminação chiaroscuro, vaso cerâmico e botão circular Play com vidro fosco e interação tátil.
   - Criação e integração vetorial da bússola orbital radiante (`assets/icons/compass-star.svg`) com círculos concêntricos, anel externo pontilhado, miras cardinais, raios diagonais e estrela de 4 pontas em degradê fogo (`#FFA240` a `#DC3B00`), sobreposta ao vértice inferior direito do vídeo com pulsação suave.
-  - Calibração da iluminação atmosférica superior direita da Hero (`.hero-section::before`) para gerar o degradê volumétrico de luz quente idêntico ao modelo.
-  - Validação completa com captura de tela headless Chrome e execução do teste automatizado `scripts/verify_all.py`, atingindo 100% de sucesso em 53 assets servidos pelo Docker na porta 3000.
+- [x] **Passo 12: Atualização do Logotipo Oficial da Chama (Identidade Visual Autêntica)**
+  - Vetorização precisa do novo ícone de chama (`assets/icons/flame.svg`) a partir do modelo autêntico fornecido.
+  - Silhueta orgânica de duas pontas: língua secundária curvada à esquerda e língua principal alongada à direita com ápice em âmbar luminoso.
+  - Núcleo de brasa escura (`#66220D`) com difusão sutil e degradê vertical quente (`#FFAE3B` no topo até `#CC3208` na base).
+  - Propagação automática em todos os 5 pontos de aplicação da marca (cabeçalho desktop, menu mobile drawer, cartão de planos, rodapé institucional e favicon).
+  - Validação 100% Docker com status HTTP 200 em todos os 53 assets estáticos via `verify_all.py`.

@@ -90,7 +90,7 @@ asserts/
 
 ### 4.1. Header & Navegação Fixa (`.site-header`)
 - **Backdrop Blur & Transparência:** Fundo em `rgba(5, 5, 5, 0.82)` com `backdrop-filter: blur(14px)` e transição suave ao rolar a página (`.is-scrolled`).
-- **Agrupamento Esquerdo com Divisor:** Logotipo vetorial de chama (`assets/icons/flame.svg`), tipografia geométrica `brasa studio`, divisor vertical cinza translúcido (`.header-divider`) e links de navegação alinhados em sequência.
+- **Agrupamento Esquerdo com Divisor:** Logotipo vetorial de chama orgânica de duas pontas (`assets/icons/flame.svg`) com núcleo de brasa escura e degradê quente, tipografia geométrica `brasa studio`, divisor vertical cinza translúcido (`.header-divider`) e links de navegação alinhados em sequência.
 - **Botão de Conversão em Destaque:** Botão `Fale com a gente` no extremo direito com aura luminosa âmbar (`box-shadow: 0 4px 18px rgba(255, 75, 25, 0.28)`).
 - **Menu Mobile Drawer (`#mobileDrawer`):** Painel lateral deslizante para telas menores que 900px, com bloqueio de scroll no body, fechamento via tecla `Escape`, clique no overlay ou toque no botão de fechar.
 
