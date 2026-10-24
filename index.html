@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasa Studio · Estúdio criativo de marca, site e campanha</title>
+  <meta name="description" content="Identidade, site e campanha para negócios criativos que querem presença memorável, com método claro e acabamento de ateliê.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/flame.svg">
+  
+  <!-- Estilos Globais e Sistema de Design -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       CABEÇALHO & NAVEGAÇÃO
+       ======================================================================== -->
+  <header id="header" class="site-header">
+    <div class="container header-container">
+      <a href="#inicio" class="logo" aria-label="Brasa Studio - Página Inicial">
+        <img src="assets/icons/flame.svg" alt="" class="logo-icon" width="22" height="22">
+        <span class="logo-text">brasa <span>studio</span></span>
+      </a>
+      
+      <nav class="nav-desktop" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions" style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="#contato" class="btn btn-primary btn-sm">Fale com a gente</a>
+        <button class="btn-menu-mobile" aria-label="Abrir menu de navegação" id="menuToggle" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Drawer e Overlay -->
+  <div id="drawerOverlay" class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Menu móvel" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <a href="#inicio" class="logo" aria-label="Brasa Studio">
+        <img src="assets/icons/flame.svg" alt="" class="logo-icon" width="22" height="22">
+        <span class="logo-text">brasa <span>studio</span></span>
+      </a>
+      <button class="btn-drawer-close" id="drawerClose" aria-label="Fechar menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav aria-label="Links do menu móvel">
+      <ul class="mobile-nav-links">
+        <li><a href="#inicio" class="mobile-nav-link active">Início</a></li>
+        <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link">Portfólio</a></li>
+        <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+        <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <a href="#contato" class="btn btn-primary" style="width: 100%;">Fale com a gente</a>
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">
+        © 2026 Brasa Studio. Todos os direitos reservados.
+      </p>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       CONTEÚDO PRINCIPAL
+       ======================================================================== -->
+  <main>
+    <!-- HERO SECTION — PRIMEIRA DOBRA -->
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Coluna Esquerda: Textos, Títulos e Ações -->
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <span class="hero-badge-pill">NOVO</span>
+              <span class="hero-badge-text">Agenda aberta para 2027</span>
+            </div>
+
+            <h1 class="display-title hero-title">
+              Design que acende<br>
+              <span class="text-orange">marcas criativas.</span>
+            </h1>
+
+            <p class="hero-description">
+              Identidade, site e campanha para negócios criativos que querem presença memorável, com método claro e acabamento de ateliê.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-secondary btn-lg">Começar um projeto</a>
+              <a href="#sobre" class="btn btn-ghost btn-lg">Conheça a Brasa</a>
+            </div>
+
+            <!-- Ícones de Marcas Parceiras -->
+            <div class="hero-partners" aria-label="Símbolos de marcas parceiras">
+              <img src="assets/icons/brand-circle.svg" alt="Marca parceira Casa Ocre" class="hero-partner-icon" width="22" height="22">
+              <img src="assets/icons/brand-triangle.svg" alt="Marca parceira Torra Rubi" class="hero-partner-icon" width="22" height="22">
+              <img src="assets/icons/brand-column.svg" alt="Marca parceira Âmbar Joias" class="hero-partner-icon" width="22" height="22">
+              <img src="assets/icons/brand-wave.svg" alt="Marca parceira Lume Arquitetura" class="hero-partner-icon" width="22" height="22">
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Fotografia Cinematográfica com Luz Âmbar -->
+          <div class="hero-visual-wrap">
+            <div class="hero-image-frame">
+              <img src="assets/images/hero-craft-object.jpg" 
+                   alt="Objeto artesanal com acabamento de luxo e iluminação quente de ateliê" 
+                   width="600" 
+                   height="400"
+                   fetchpriority="high">
+            </div>
+            <!-- Estrela Decorativa de 4 Pontas -->
+            <div class="hero-sparkle-badge" aria-hidden="true">
+              <img src="assets/icons/sparkle.svg" alt="" width="22" height="22">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 2: SOBRE A BRASA (EDITORIAL DE APRESENTAÇÃO)
+         ==================================================================== -->
+    <section id="sobre" class="section sobre-section">
+      <div class="container">
+        <div class="sobre-grid">
+          
+          <!-- Coluna Esquerda: Fotografia Vertical do Artesão / Designer -->
+          <div class="sobre-image-wrap">
+            <img src="assets/images/sobre-artisan.jpg" 
+                 alt="Designer e artesão trabalhando em bancada de ateliê sob iluminação quente" 
+                 width="500" 
+                 height="667"
+                 loading="lazy">
+          </div>
+
+          <!-- Coluna Direita: Conteúdo Editorial, Checklist e Avaliação -->
+          <div class="sobre-content">
+            <div class="section-tag">Sobre a Brasa</div>
+            
+            <h2 class="sobre-title">
+              Marcas mais fortes,<br>
+              impressões que ficam.
+            </h2>
+
+            <p class="sobre-description">
+              Somos um estúdio enxuto de direção de arte, design e tecnologia. Cada projeto passa pelas mesmas mãos do briefing à entrega, sem repasse e sem ruído.
+            </p>
+
+            <ul class="sobre-features">
+              <li class="sobre-feature-item">
+                <img src="assets/icons/sparkle.svg" class="sobre-feature-icon" alt="" width="16" height="16">
+                <span>Time sênior em todas as etapas do projeto.</span>
+              </li>
+              <li class="sobre-feature-item">
+                <img src="assets/icons/sparkle.svg" class="sobre-feature-icon" alt="" width="16" height="16">
+                <span>Cronograma fechado antes do primeiro traço.</span>
+              </li>
+            </ul>
+
+            <div class="sobre-footer-actions">
+              <a href="#como-trabalhamos" class="btn btn-primary">Como trabalhamos</a>
+              
+              <div class="sobre-rating">
+                <div class="rating-stars-row" aria-label="Avaliação 5 estrelas">
+                  <img src="assets/icons/star.svg" alt="" width="15" height="15">
+                  <img src="assets/icons/star.svg" alt="" width="15" height="15">
+                  <img src="assets/icons/star.svg" alt="" width="15" height="15">
+                  <img src="assets/icons/star.svg" alt="" width="15" height="15">
+                  <img src="assets/icons/star.svg" alt="" width="15" height="15">
+                </div>
+                <span class="rating-text">Nota 4,9 dada por 86 clientes</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 3: RESULTADOS EM DESTAQUE (CASES / PRODUTOS)
+         ==================================================================== -->
+    <section id="resultados" class="section results-section">
+      <div class="container">
+        
+        <!-- Header Centralizado com Dossel Angular -->
+        <div class="section-header-center section-header-canopy">
+          <div class="section-tag">Resultados</div>
+          <h2 class="section-title">
+            Resultados que aparecem<br>
+            no caixa e na marca.
+          </h2>
+          <p class="section-subtitle">
+            Cada entrega nasce com um objetivo claro e um jeito de medir. Veja alguns números de projetos recentes.
+          </p>
+          <a href="#contato" class="btn btn-primary">Agendar 15 minutos</a>
+        </div>
+
+        <!-- Grade de 3 Cartões de Resultados -->
+        <div class="results-grid">
+          
+          <!-- Card 1: Casa Ocre -->
+          <article class="result-card">
+            <div class="result-card-media">
+              <img src="assets/images/result-casa-ocre.jpg" 
+                   alt="Vaso artesanal cerâmico da Casa Ocre sob luz âmbar" 
+                   width="400" 
+                   height="267"
+                   loading="lazy">
+            </div>
+            <div class="result-card-body">
+              <div class="result-card-header">
+                <div class="result-client-badge">
+                  <img src="assets/icons/brand-circle.svg" class="result-client-icon" alt="" width="18" height="18">
+                  <span class="result-client-name">Casa Ocre</span>
+                </div>
+                <span class="badge-status">NOVO</span>
+              </div>
+              <div class="result-metrics-row">
+                <span class="metric-pill">+38% em vendas online</span>
+                <span class="metric-pill">22x mais recompra</span>
+              </div>
+              <p class="result-card-desc">
+                Nova identidade e loja virtual para um ateliê de cerâmica autoral, com fotografia de produto própria.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Torra Rubi -->
+          <article class="result-card">
+            <div class="result-card-media">
+              <img src="assets/images/result-torra-rubi.jpg" 
+                   alt="Xícara de café especial Torra Rubi com grãos selecionados" 
+                   width="400" 
+                   height="267"
+                   loading="lazy">
+            </div>
+            <div class="result-card-body">
+              <div class="result-card-header">
+                <div class="result-client-badge">
+                  <img src="assets/icons/brand-triangle.svg" class="result-client-icon" alt="" width="18" height="18">
+                  <span class="result-client-name">Torra Rubi</span>
+                </div>
+              </div>
+              <div class="result-metrics-row">
+                <span class="metric-pill">+37% no custo por lead</span>
+                <span class="metric-pill">+45% em pedidos B2B</span>
+              </div>
+              <p class="result-card-desc">
+                Reposicionamento de uma torrefação de cafés especiais para atender cafeterias e escritórios.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Âmbar Joias -->
+          <article class="result-card">
+            <div class="result-card-media">
+              <img src="assets/images/result-ambar-joias.jpg" 
+                   alt="Anel artesanal de ouro reciclado da Âmbar Joias sobre rocha vulcânica" 
+                   width="400" 
+                   height="267"
+                   loading="lazy">
+            </div>
+            <div class="result-card-body">
+              <div class="result-card-header">
+                <div class="result-client-badge">
+                  <img src="assets/icons/brand-column.svg" class="result-client-icon" alt="" width="18" height="18">
+                  <span class="result-client-name">Âmbar Joias</span>
+                </div>
+                <span class="badge-status">RELEVANTE</span>
+              </div>
+              <div class="result-metrics-row">
+                <span class="metric-pill">+64% de visitas qualificadas</span>
+                <span class="metric-pill">+28% no ticket médio</span>
+              </div>
+              <p class="result-card-desc">
+                Campanha de lançamento e site editorial para uma coleção de joias em ouro reciclado.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 4: PROCESSO & BENEFÍCIOS (DO BRIEFING AO AR)
+         ==================================================================== -->
+    <section id="como-trabalhamos" class="section process-section">
+      <div class="container">
+        <div class="process-grid">
+          
+          <!-- Coluna Esquerda: Conteúdo, Etapas Sequenciais e CTA -->
+          <div class="process-content">
+            <div class="section-tag">Como trabalhamos</div>
+
+            <h2 class="process-title">
+              Do briefing ao ar,<br>
+              sem atalhos.
+            </h2>
+
+            <p class="process-subtitle">
+              Um processo curto, com entregas visíveis a cada semana, para você acompanhar a ideia virando produto.
+            </p>
+
+            <div class="process-steps">
+              
+              <!-- Etapa 1: Imersão -->
+              <div class="process-step-card">
+                <div class="step-card-header">
+                  <div class="step-header-left">
+                    <div class="step-icon-wrap">
+                      <img src="assets/icons/step-search.svg" alt="" width="16" height="16">
+                    </div>
+                    <h3 class="step-title">Imersão</h3>
+                  </div>
+                  <span class="step-badge">Etapa 1</span>
+                </div>
+                <p class="step-desc">
+                  Começamos ouvindo. Entrevistas, visita ao negócio e leitura do mercado para entender metas, público e o que torna a sua marca única.
+                </p>
+                <div class="step-tags">
+                  <span class="step-tag-pill">Diagnóstico de marca</span>
+                  <span class="step-tag-pill">Plano de projeto</span>
+                </div>
+              </div>
+
+              <!-- Etapa 2: Criação -->
+              <div class="process-step-card">
+                <div class="step-card-header">
+                  <div class="step-header-left">
+                    <div class="step-icon-wrap">
+                      <img src="assets/icons/step-pen.svg" alt="" width="16" height="16">
+                    </div>
+                    <h3 class="step-title">Criação</h3>
+                  </div>
+                  <span class="step-badge">Etapa 2</span>
+                </div>
+                <p class="step-desc">
+                  Com a estratégia definida, a ideia ganha forma. Direção de arte, design e código andam juntos, com revisões semanais em vez de surpresas no fim.
+                </p>
+                <div class="step-tags">
+                  <span class="step-tag-pill">Revisões semanais</span>
+                  <span class="step-tag-pill">Protótipo navegável</span>
+                </div>
+              </div>
+
+              <!-- Etapa 3: Entrega -->
+              <div class="process-step-card">
+                <div class="step-card-header">
+                  <div class="step-header-left">
+                    <div class="step-icon-wrap">
+                      <img src="assets/icons/step-rocket.svg" alt="" width="16" height="16">
+                    </div>
+                    <h3 class="step-title">Entrega</h3>
+                  </div>
+                  <span class="step-badge">Etapa 3</span>
+                </div>
+                <p class="step-desc">
+                  Arquivos organizados, guia de uso e treinamento de equipe. Ficamos por perto nas primeiras semanas para o lançamento sair redondo.
+                </p>
+                <div class="step-tags">
+                  <span class="step-tag-pill">Suporte pós-lançamento</span>
+                  <span class="step-tag-pill">Guia de marca</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="process-footer">
+              <a href="#contato" class="btn btn-primary">Agendar conversa</a>
+              <img src="assets/icons/sparkle.svg" class="sparkle-icon" alt="" width="20" height="20">
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Fotografia Cinematográfica de Bancada / Processo -->
+          <div class="process-image-wrap">
+            <img src="assets/images/process-workbench.jpg" 
+                 alt="Mãos trabalhando com amostras de materiais táteis e cartelas de cores em bancada de ateliê" 
+                 width="500" 
+                 height="667"
+                 loading="lazy">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 5: DIFERENCIAIS DE ESTÚDIO (RECURSOS DE ESTÚDIO GRANDE)
+         ==================================================================== -->
+    <section id="diferenciais" class="section diferenciais-section">
+      <div class="container">
+        
+        <!-- Header Centralizado com Dossel Angular -->
+        <div class="section-header-center section-header-canopy">
+          <div class="section-tag">Diferenciais</div>
+          <h2 class="section-title">
+            Recursos de estúdio grande<br>
+            com atenção de ateliê.
+          </h2>
+          <p class="section-subtitle">
+            Estratégia, design e tecnologia trabalhando juntos, para cada peça render mais do que ficar bonita.
+          </p>
+          <a href="#sobre" class="btn btn-primary">Conheça a Brasa</a>
+        </div>
+
+        <!-- Grade 3x2 com 6 Cartões de Recursos -->
+        <div class="diferenciais-grid">
+          
+          <!-- Card 1: Marca que vende -->
+          <article class="diff-card">
+            <div class="diff-card-header">
+              <div class="diff-icon-group">
+                <div class="diff-icon-box">
+                  <img src="assets/icons/icon-chart.svg" alt="" width="18" height="18">
+                </div>
+                <span class="badge-status">PRO</span>
+              </div>
+              <img src="assets/icons/arrow-up-right.svg" class="diff-arrow-icon" alt="" width="18" height="18">
+            </div>
+            <h3 class="diff-title">Marca que vende</h3>
+            <span class="diff-category">Estratégia comercial</span>
+            <p class="diff-desc">
+              Posicionamento e mensagens pensados para transformar atenção em pedido.
+            </p>
+          </article>
+
+          <!-- Card 2: Sistema editável -->
+          <article class="diff-card">
+            <div class="diff-card-header">
+              <div class="diff-icon-group">
+                <div class="diff-icon-box">
+                  <img src="assets/icons/icon-layers.svg" alt="" width="18" height="18">
+                </div>
+              </div>
+              <img src="assets/icons/arrow-up-right.svg" class="diff-arrow-icon" alt="" width="18" height="18">
+            </div>
+            <h3 class="diff-title">Sistema editável</h3>
+            <span class="diff-category">Arquivos vivos</span>
+            <p class="diff-desc">
+              Modelos e componentes que a sua equipe ajusta sem depender do estúdio.
+            </p>
+          </article>
+
+          <!-- Card 3: Código leve -->
+          <article class="diff-card">
+            <div class="diff-card-header">
+              <div class="diff-icon-group">
+                <div class="diff-icon-box">
+                  <img src="assets/icons/icon-zap.svg" alt="" width="18" height="18">
+                </div>
+              </div>
+              <img src="assets/icons/arrow-up-right.svg" class="diff-arrow-icon" alt="" width="18" height="18">
+            </div>
+            <h3 class="diff-title">Código leve</h3>
+            <span class="diff-category">Performance de fábrica</span>
+            <p class="diff-desc">
+              Sites rápidos, acessíveis e fáceis de manter, sem plugins pesados.
+            </p>
+          </article>
+
+          <!-- Card 4: Direção de arte -->
+          <article class="diff-card">
+            <div class="diff-card-header">
+              <div class="diff-icon-group">
+                <div class="diff-icon-box">
+                  <img src="assets/icons/icon-eye.svg" alt="" width="18" height="18">
+                </div>
+              </div>
+              <img src="assets/icons/arrow-up-right.svg" class="diff-arrow-icon" alt="" width="18" height="18">
+            </div>
+            <h3 class="diff-title">Direção de arte</h3>
+            <span class="diff-category">Olhar autoral</span>
+            <p class="diff-desc">
+              Fotografia, tipografia e cor com assinatura própria, longe do genérico.
+            </p>
+          </article>
+
+          <!-- Card 5: Prazo combinado -->
+          <article class="diff-card">
+            <div class="diff-card-header">
+              <div class="diff-icon-group">
+                <div class="diff-icon-box">
+                  <img src="assets/icons/icon-calendar.svg" alt="" width="18" height="18">
+                </div>
+                <span class="badge-status">NOVO</span>
+              </div>
+              <img src="assets/icons/arrow-up-right.svg" class="diff-arrow-icon" alt="" width="18" height="18">
+            </div>
+            <h3 class="diff-title">Prazo combinado</h3>
+            <span class="diff-category">Entregas semanais</span>
+            <p class="diff-desc">
+              Cronograma fechado no início e entregas visíveis toda semana.
+            </p>
+          </article>
+
+          <!-- Card 6: Pensado para o celular -->
+          <article class="diff-card">
+            <div class="diff-card-header">
+              <div class="diff-icon-group">
+                <div class="diff-icon-box">
+                  <img src="assets/icons/icon-smartphone.svg" alt="" width="18" height="18">
+                </div>
+              </div>
+              <img src="assets/icons/arrow-up-right.svg" class="diff-arrow-icon" alt="" width="18" height="18">
+            </div>
+            <h3 class="diff-title">Pensado para o celular</h3>
+            <span class="diff-category">Responsivo de verdade</span>
+            <p class="diff-desc">
+              Cada tela nasce no celular e é ampliada com cuidado para telas maiores.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 6: APRESENTAÇÃO EDITORIAL (POR QUE A BRASA)
+         ==================================================================== -->
+    <section id="por-que-a-brasa" class="section why-section">
+      <div class="container">
+        
+        <div class="why-header">
+          <div class="section-tag">Por que a Brasa</div>
+          <h2 class="why-title">
+            A gente não só desenha,<br>
+            a gente coloca no ar.
+          </h2>
+        </div>
+
+        <!-- Linha de Etiquetas / Chips Deslizantes -->
+        <div class="why-chips-wrap" aria-label="Capacidades técnicas e diferenciais">
+          <span class="why-chip">Experiência fluida</span>
+          <span class="why-chip">Mais conversão</span>
+          <span class="why-chip">Carregamento rápido</span>
+          <span class="why-chip">SEO técnico</span>
+          <span class="why-chip">Personalizável</span>
+          <span class="why-chip">Escalável</span>
+          <span class="why-chip">Mais engajamento</span>
+          <span class="why-chip">Expansível</span>
+          <span class="why-chip">Seguro</span>
+          <span class="why-chip">Acessível</span>
+          <a href="#contato" class="why-chip why-chip-cta">Fale agora</a>
+        </div>
+
+        <!-- Grade Assimétrica de 5 Cartões -->
+        <div class="why-grid">
+          
+          <!-- Linha Superior (2 Cartões) -->
+          <div class="why-row-top">
+            
+            <!-- Card 1: Revisões com método -->
+            <article class="why-card">
+              <div class="why-card-media">
+                <img src="assets/images/why-revisoes.jpg" 
+                     alt="Mural de mockups, tipografia e testes de marca no estúdio" 
+                     width="500" 
+                     height="333"
+                     loading="lazy">
+              </div>
+              <div class="why-card-body">
+                <div class="why-card-title-row">
+                  <h3 class="why-card-title">Revisões com método</h3>
+                  <span class="badge-status">NOVO</span>
+                </div>
+                <p class="why-card-desc">
+                  Cada etapa tem rodadas de revisão combinadas, para o seu retorno entrar no projeto sem atrasar o cronograma.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 2: Pedidos sem fila (Destaque Largo) -->
+            <article class="why-card">
+              <div class="why-card-media why-card-media-lg">
+                <img src="assets/images/why-pedidos.jpg" 
+                     alt="Escultura fluida de vidro âmbar incandescente renderizada em 3D" 
+                     width="640" 
+                     height="360"
+                     loading="lazy">
+              </div>
+              <div class="why-card-body">
+                <h3 class="why-card-title" style="margin-bottom: 0.75rem;">Pedidos sem fila</h3>
+                <p class="why-card-desc">
+                  Mande ajustes e novas peças quando precisar, dentro do plano. A fila é organizada pelo estúdio e você acompanha cada item.
+                </p>
+                <div class="why-card-actions">
+                  <a href="#contato" class="btn btn-primary btn-sm">Agendar conversa</a>
+                  <a href="#sobre" class="btn btn-ghost btn-sm">Conheça a Brasa</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Linha Inferior (3 Cartões) -->
+          <div class="why-row-bottom">
+            
+            <!-- Card 3: Preço sem surpresa -->
+            <article class="why-card">
+              <div class="why-card-media">
+                <img src="assets/images/why-preco.jpg" 
+                     alt="Caderno de esboços e anotações de planejamento de projeto" 
+                     width="400" 
+                     height="267"
+                     loading="lazy">
+              </div>
+              <div class="why-card-body">
+                <div class="why-card-title-row">
+                  <h3 class="why-card-title">Preço sem surpresa</h3>
+                  <span class="badge-status">NOVO</span>
+                </div>
+                <p class="why-card-desc">
+                  Planos fechados e escopo por escrito. Você sabe quanto vai investir antes de começar, do primeiro esboço ao lançamento.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 4: Retorno rápido -->
+            <article class="why-card">
+              <div class="why-card-media">
+                <img src="assets/images/why-retorno.jpg" 
+                     alt="Ampulheta artesanal de latão e vidro com areia dourada" 
+                     width="400" 
+                     height="267"
+                     loading="lazy">
+              </div>
+              <div class="why-card-body">
+                <div class="why-card-title-row">
+                  <h3 class="why-card-title">Retorno rápido</h3>
+                  <span class="badge-status">NOVO</span>
+                </div>
+                <p class="why-card-desc">
+                  Respostas em até um dia útil, com prioridade para o que trava o seu negócio.
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 5: Publicação assistida -->
+            <article class="why-card">
+              <div class="why-card-media">
+                <img src="assets/images/why-publicacao.jpg" 
+                     alt="Mãos digitando código em teclado de laptop no estúdio escuro" 
+                     width="400" 
+                     height="267"
+                     loading="lazy">
+              </div>
+              <div class="why-card-body">
+                <h3 class="why-card-title" style="margin-bottom: 0.75rem;">Publicação assistida</h3>
+                <p class="why-card-desc">
+                  Colocamos o site no ar e acompanhamos as primeiras semanas de perto.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 7: PORTFÓLIO EM FORMATO PANORÂMICO LARGO
+         ==================================================================== -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        
+        <!-- Header Centralizado com Dossel Angular -->
+        <div class="section-header-center section-header-canopy">
+          <div class="section-tag">Portfólio</div>
+          <h2 class="section-title">
+            Projetos selecionados<br>
+            que acendem marcas.
+          </h2>
+          <p class="section-subtitle">
+            Uma seleção de trabalhos recentes, de lojas autorais a escritórios de serviço, em setores diferentes.
+          </p>
+          <a href="#contato" class="btn btn-primary">Pedir o portfólio completo</a>
+        </div>
+
+        <!-- Pilha de 3 Blocos Panorâmicos Verticais -->
+        <div class="portfolio-panoramic-stack">
+          
+          <!-- Bloco 1: Casa Ocre -->
+          <article class="panoramic-card">
+            <div class="panoramic-media">
+              <img src="assets/images/portfolio-casa-ocre-wide.jpg" 
+                   alt="Prateleira de cerâmicas autorais Casa Ocre em ateliê iluminado" 
+                   width="1200" 
+                   height="525"
+                   loading="lazy">
+            </div>
+            <div class="panoramic-footer">
+              <div class="panoramic-tags">
+                <span class="panoramic-tag-item">E-commerce</span>
+                <span class="panoramic-tag-item">Identidade</span>
+              </div>
+              <div class="panoramic-progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar-fill" style="width: 65%;"></div>
+                </div>
+              </div>
+              <div class="panoramic-info">
+                <span>Casa Ocre</span>
+                <span class="panoramic-year">· 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bloco 2: Torra Rubi -->
+          <article class="panoramic-card">
+            <div class="panoramic-media">
+              <img src="assets/images/portfolio-torra-rubi-wide.jpg" 
+                   alt="Embalagens kraft de café especial Torra Rubi em balcão de torrefação" 
+                   width="1200" 
+                   height="525"
+                   loading="lazy">
+            </div>
+            <div class="panoramic-footer">
+              <div class="panoramic-tags">
+                <span class="panoramic-tag-item">Marca</span>
+                <span class="panoramic-tag-item">Embalagem</span>
+              </div>
+              <div class="panoramic-progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+              <div class="panoramic-info">
+                <span>Torra Rubi</span>
+                <span class="panoramic-year">· 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bloco 3: Lume Arquitetura -->
+          <article class="panoramic-card">
+            <div class="panoramic-media">
+              <img src="assets/images/portfolio-lume-wide.jpg" 
+                   alt="Showroom de arquitetura com mesa de maquete iluminada da Lume Arquitetura" 
+                   width="1200" 
+                   height="525"
+                   loading="lazy">
+            </div>
+            <div class="panoramic-footer">
+              <div class="panoramic-tags">
+                <span class="panoramic-tag-item">Site institucional</span>
+                <span class="panoramic-tag-item">Direção de arte</span>
+              </div>
+              <div class="panoramic-progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar-fill" style="width: 50%;"></div>
+                </div>
+              </div>
+              <div class="panoramic-info">
+                <span>Lume Arquitetura</span>
+                <span class="panoramic-year">· 2025</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    <!-- ====================================================================
+         SEÇÃO 8: SERVIÇOS COMPLETOS (DO CONCEITO AO CÓDIGO)
+         ==================================================================== -->
+    <section id="servicos" class="section services-section">
+      <div class="container">
+        <div class="services-grid">
+          
+          <!-- Coluna Visual Esquerda: Fotografia do Profissional na Bancada (Sticky) -->
+          <div class="services-visual-col">
+            <div class="services-portrait-card">
+              <img src="assets/images/services-professional.jpg" 
+                   alt="Designer e diretor de arte analisando paleta de cores e projeto gráfico em bancada iluminada no estúdio" 
+                   width="494" 
+                   height="504"
+                   loading="lazy">
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Conteúdo Editorial e Pacotes de Serviços -->
+          <div class="services-content-col">
+            <div class="section-tag">Serviços</div>
+
+            <h2 class="services-title">
+              Serviços completos,<br>
+              do conceito ao código.
+            </h2>
+
+            <p class="services-subtitle">
+              Escolha o formato que combina com o momento da sua marca. Todos incluem estratégia, direção de arte e acompanhamento.
+            </p>
+
+            <!-- Pilha de 3 Cartões de Pacotes -->
+            <div class="services-cards-stack">
+              
+              <!-- Pacote 1: Site sob medida -->
+              <article class="service-package-card">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <img src="assets/icons/icon-browser.svg" alt="" width="18" height="18">
+                  </div>
+                  <span class="service-category-tag">Site</span>
+                </div>
+                <h3 class="service-card-title">Site sob medida</h3>
+                <p class="service-card-desc">
+                  Do mapa de páginas ao código final, com foco em velocidade, busca orgânica e conversão. Pronto para crescer junto com o negócio.
+                </p>
+                <div class="service-pills-row">
+                  <span class="service-price-pill"><strong>R$ 24 mil</strong> / projeto</span>
+                  <span class="service-time-pill">5–7 semanas</span>
+                </div>
+                <ul class="service-checklist" role="list">
+                  <li class="service-check-item">
+                    <img src="assets/icons/check.svg" class="service-check-icon" alt="">
+                    <span>Design e desenvolvimento próprios</span>
+                  </li>
+                  <li class="service-check-item">
+                    <img src="assets/icons/check.svg" class="service-check-icon" alt="">
+                    <span>Animações sutis e acessíveis</span>
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Pacote 2: Identidade completa -->
+              <article class="service-package-card">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <img src="assets/icons/icon-palette.svg" alt="" width="18" height="18">
+                  </div>
+                  <span class="service-category-tag">Marca</span>
+                </div>
+                <h3 class="service-card-title">Identidade completa</h3>
+                <p class="service-card-desc">
+                  Logo, paleta, tipografia, fotografia de referência e manual de uso, para a marca ficar consistente em todos os pontos de contato.
+                </p>
+                <div class="service-pills-row">
+                  <span class="service-price-pill"><strong>R$ 16 mil</strong> / projeto</span>
+                  <span class="service-time-pill">3–4 semanas</span>
+                </div>
+                <ul class="service-checklist" role="list">
+                  <li class="service-check-item">
+                    <img src="assets/icons/check.svg" class="service-check-icon" alt="">
+                    <span>Arquivos-fonte e manual da marca</span>
+                  </li>
+                  <li class="service-check-item">
+                    <img src="assets/icons/check.svg" class="service-check-icon" alt="">
+                    <span>Kit para redes sociais</span>
+                  </li>
+                </ul>
+              </article>
+
+              <!-- Pacote 3: Lançamento integrado -->
+              <article class="service-package-card">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <img src="assets/icons/icon-megaphone.svg" alt="" width="18" height="18">
+                  </div>
+                  <span class="service-category-tag">Campanha</span>
+                </div>
+                <h3 class="service-card-title">Lançamento integrado</h3>
+                <p class="service-card-desc">
+                  Conceito criativo, peças para mídia paga, página de destino e roteiro de conteúdo para lançar um produto com força.
+                </p>
+                <div class="service-pills-row">
+                  <span class="service-price-pill"><strong>R$ 12 mil</strong> / projeto</span>
+                  <span class="service-time-pill">2–3 semanas</span>
+                </div>
+                <ul class="service-checklist" role="list">
+                  <li class="service-check-item">
+                    <img src="assets/icons/check.svg" class="service-check-icon" alt="">
+                    <span>Página de destino otimizada</span>
+                  </li>
+                  <li class="service-check-item">
+                    <img src="assets/icons/check.svg" class="service-check-icon" alt="">
+                    <span>Peças para mídia e redes</span>
+                  </li>
+                </ul>
+                <div style="margin-top: 1.75rem;">
+                  <a href="#contato" class="btn btn-primary">Agendar conversa</a>
+                </div>
+                
+                <!-- Ornamento celestial / estrela orbital -->
+                <svg class="service-card-orbit-deco" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="50" cy="50" r="44" stroke="#FF4B19" stroke-width="0.8" stroke-dasharray="2 3"/>
+                  <path d="M50 15 L53 47 L85 50 L53 53 L50 85 L47 53 L15 50 L47 47 Z" fill="#FF4B19"/>
+                </svg>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 9: BANNER PARCEIRO CRIATIVO & GALERIA DE DETALHES 2x3
+         ==================================================================== -->
+    <section id="galeria" class="section gallery-section">
+      <div class="container">
+        
+        <!-- Banner de Autoridade Centralizado com Dossel Angular -->
+        <div class="gallery-banner section-header-canopy">
+          <div class="section-tag">Lance seu projeto</div>
+          <h2 class="gallery-banner-title">
+            O parceiro criativo<br>
+            de marcas em crescimento.
+          </h2>
+          <p class="gallery-banner-subtitle">
+            Do primeiro esboço ao site no ar, com acompanhamento próximo e um time que responde rápido.
+          </p>
+          <a href="#como-trabalhamos" class="btn btn-primary">Ver como trabalhamos</a>
+        </div>
+
+        <!-- Grade 2x3 com 6 Fotografias Artísticas com Lightbox -->
+        <div class="gallery-grid" aria-label="Galeria fotográfica de processos, texturas e ateliê">
+          
+          <!-- Foto 1: Cerâmica no torno mecânico -->
+          <div class="gallery-card" data-caption="Cerâmica artesanal modelada no torno — Ateliê Casa Ocre" tabindex="0" role="button" aria-label="Ampliar foto: Cerâmica artesanal modelada no torno">
+            <img src="assets/images/gallery-pottery.jpg" 
+                 alt="Mãos de artesão moldando vaso de cerâmica no torno em rotação com fagulhas de luz" 
+                 width="376" 
+                 height="310"
+                 loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-caption">Cerâmica & Torno</span>
+              <div class="gallery-card-zoom-icon">✦</div>
+            </div>
+          </div>
+
+          <!-- Foto 2: Extração de café V60 -->
+          <div class="gallery-card" data-caption="Extração lenta de grãos selecionados — Torrefação Torra Rubi" tabindex="0" role="button" aria-label="Ampliar foto: Extração de café V60">
+            <img src="assets/images/gallery-coffee.jpg" 
+                 alt="Extração artesanal de café especial por gotejamento em filtro cerâmico com xícara de cerâmica" 
+                 width="376" 
+                 height="310"
+                 loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-caption">Café Especial V60</span>
+              <div class="gallery-card-zoom-icon">✦</div>
+            </div>
+          </div>
+
+          <!-- Foto 3: Fachada noturna de ateliê -->
+          <div class="gallery-card" data-caption="Arquitetura comercial e vitrine noturna com iluminação âmbar" tabindex="0" role="button" aria-label="Ampliar foto: Fachada noturna de ateliê">
+            <img src="assets/images/gallery-storefront.jpg" 
+                 alt="Fachada escura de loja e ateliê com vitrine iluminada por lâmpadas incandescentes quentes" 
+                 width="376" 
+                 height="310"
+                 loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-caption">Fachada de Ateliê</span>
+              <div class="gallery-card-zoom-icon">✦</div>
+            </div>
+          </div>
+
+          <!-- Foto 4: Gargantilha de ouro sobre seda -->
+          <div class="gallery-card" data-caption="Joalheria contemporânea em ouro texturizado — Âmbar Joias" tabindex="0" role="button" aria-label="Ampliar foto: Gargantilha de ouro sobre seda">
+            <img src="assets/images/gallery-necklace.jpg" 
+                 alt="Gargantilha artesanal em corrente de ouro com pingente em gota sobre tecido drapeado escuro" 
+                 width="376" 
+                 height="310"
+                 loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-caption">Joalheria Autoral</span>
+              <div class="gallery-card-zoom-icon">✦</div>
+            </div>
+          </div>
+
+          <!-- Foto 5: Ciclista no entardecer urbano -->
+          <div class="gallery-card" data-caption="Fotografia editorial de estilo de vida urbano ao entardecer" tabindex="0" role="button" aria-label="Ampliar foto: Ciclista no entardecer urbano">
+            <img src="assets/images/gallery-cyclist.jpg" 
+                 alt="Ciclista pedalando por rua pavimentada de paralelepípedos na hora de ouro do entardecer" 
+                 width="376" 
+                 height="310"
+                 loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-caption">Vida Urbana</span>
+              <div class="gallery-card-zoom-icon">✦</div>
+            </div>
+          </div>
+
+          <!-- Foto 6: Tecidos tingidos à mão -->
+          <div class="gallery-card" data-caption="Amostras de tecidos de algodão com tingimento natural em pilha" tabindex="0" role="button" aria-label="Ampliar foto: Tecidos tingidos à mão">
+            <img src="assets/images/gallery-textiles.jpg" 
+                 alt="Pilha de lenços e tecidos finos com padrões terrosos e tingimento orgânico artesanal" 
+                 width="376" 
+                 height="310"
+                 loading="lazy">
+            <div class="gallery-card-overlay">
+              <span class="gallery-card-caption">Tecidos Naturais</span>
+              <div class="gallery-card-zoom-icon">✦</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modal Lightbox da Galeria -->
+    <div id="gallery-lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Visualização ampliada da imagem">
+      <div class="lightbox-content">
+        <button type="button" class="lightbox-close-btn" id="lightbox-close" aria-label="Fechar visualização">&times;</button>
+        <img src="" alt="" class="lightbox-img" id="lightbox-img">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
+    </div>
+    <!-- ====================================================================
+         SEÇÃO 10: PLANOS MENSAIS (DESIGN CONTÍNUO)
+         ==================================================================== -->
+    <section id="planos" class="section planos-section">
+      <div class="container">
+        
+        <div class="planos-header">
+          <div class="section-tag">Planos</div>
+          <h2 class="planos-title">
+            Planos mensais para manter<br>
+            sua marca sempre acesa.
+          </h2>
+          <p class="planos-subtitle">
+            Para quem precisa de design contínuo depois do lançamento. Escopo por escrito, sem fidelidade e com prioridade na agenda.
+          </p>
+        </div>
+
+        <!-- Grade de 2 Cartões de Planos -->
+        <div class="planos-grid">
+          
+          <!-- Plano 1: Essencial -->
+          <article class="plano-card">
+            <div class="plano-card-top">
+              <div class="plano-icon-box">
+                <img src="assets/icons/flame.svg" alt="" width="20" height="20">
+              </div>
+              <span class="plano-badge">Mais escolhido</span>
+            </div>
+            
+            <div class="plano-label">Essencial</div>
+            
+            <div class="plano-price-wrap">
+              <span class="plano-price-value">R$ 3.900</span>
+              <span class="plano-price-freq">/ mês</span>
+              <span class="plano-old-price">R$ 4.600</span>
+            </div>
+
+            <p class="plano-card-desc">
+              Para marcas que precisam de peças novas todo mês, com direção de arte e prazo combinado.
+            </p>
+
+            <div class="plano-pills-row">
+              <span class="plano-pill-item"><strong>8 peças</strong> por mês</span>
+              <span class="plano-pill-item"><strong>2 rodadas</strong> de ajuste</span>
+            </div>
+
+            <ul class="plano-checklist" role="list">
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Direção de arte dedicada</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Arquivos-fonte liberados</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Calendário de conteúdo</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Suporte por e-mail em 1 dia útil</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Cancelamento com 30 dias de aviso</span>
+              </li>
+            </ul>
+
+            <div class="plano-btn-wrap">
+              <a href="#contato" class="btn btn-primary">Agendar conversa</a>
+            </div>
+          </article>
+
+          <!-- Plano 2: Estúdio (Destaque) -->
+          <article class="plano-card plano-card-highlight">
+            <div class="plano-card-top">
+              <div class="plano-icon-box">
+                <img src="assets/icons/icon-gem.svg" alt="" width="20" height="20">
+              </div>
+              <span class="plano-badge">Recomendado</span>
+            </div>
+
+            <div class="plano-label">Estúdio</div>
+
+            <div class="plano-price-wrap">
+              <span class="plano-price-value">R$ 8.900</span>
+              <span class="plano-price-freq">/ mês</span>
+            </div>
+
+            <p class="plano-card-desc">
+              Para empresas em crescimento que querem o estúdio como extensão do time, com campanhas e melhorias no site.
+            </p>
+
+            <div class="plano-pills-row">
+              <span class="plano-pill-item"><strong>24 peças</strong> por mês</span>
+              <span class="plano-pill-item"><strong>Ajustes</strong> sem limite</span>
+            </div>
+
+            <ul class="plano-checklist" role="list">
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Tudo do plano Essencial</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Melhorias contínuas no site</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Uma campanha por trimestre</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Reunião quinzenal de pauta</span>
+              </li>
+              <li class="plano-check-item">
+                <img src="assets/icons/check.svg" class="plano-check-icon" alt="">
+                <span>Cancelamento com 30 dias de aviso</span>
+              </li>
+            </ul>
+
+            <div class="plano-btn-wrap">
+              <a href="#contato" class="btn btn-primary">Agendar conversa</a>
+            </div>
+
+            <!-- Ornamento celestial / estrela orbital -->
+            <svg class="plano-orbit-deco" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" stroke="#FF4B19" stroke-width="0.8" stroke-dasharray="2 3"/>
+              <path d="M50 15 L53 47 L85 50 L53 53 L50 85 L47 53 L15 50 L47 47 Z" fill="#FF4B19"/>
+            </svg>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 11: DEPOIMENTOS DAS MARCAS
+         ==================================================================== -->
+    <section id="depoimentos" class="section testimonials-section">
+      <div class="container">
+        
+        <!-- Banner de Depoimentos Centralizado com Dossel Angular -->
+        <div class="testimonials-banner section-header-canopy">
+          <div class="section-tag">Depoimentos</div>
+          <h2 class="testimonials-title">
+            O que dizem as marcas<br>
+            que passaram por aqui.
+          </h2>
+          <p class="testimonials-subtitle">
+            Clientes contam como foi trabalhar com o estúdio e o que mudou depois do lançamento.
+          </p>
+
+          <!-- Barra de Marcas Parceiras -->
+          <div class="testimonials-brands-bar" aria-label="Marcas atendidas">
+            <div class="testimonials-brand-box" title="Casa Ocre">
+              <img src="assets/icons/brand-circle.svg" alt="Casa Ocre">
+            </div>
+            <div class="testimonials-brand-box" title="Torra Rubi">
+              <img src="assets/icons/brand-triangle.svg" alt="Torra Rubi">
+            </div>
+            <div class="testimonials-brand-box" title="Lume Arquitetura">
+              <img src="assets/icons/brand-column.svg" alt="Lume Arquitetura">
+            </div>
+            <div class="testimonials-brand-box" title="Âmbar Joias">
+              <img src="assets/icons/brand-wave.svg" alt="Âmbar Joias">
+            </div>
+          </div>
+
+          <div class="testimonials-slider-track" aria-hidden="true">
+            <div class="testimonials-slider-fill"></div>
+          </div>
+
+          <a href="#portfolio" class="btn btn-primary">Ver portfólio</a>
+        </div>
+
+        <!-- Grade 3x2 com 6 Avaliações Reais -->
+        <div class="testimonials-grid">
+          
+          <!-- Depoimento 1: Helena Duarte -->
+          <article class="testimonial-card">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/images/avatar-helena.jpg" alt="Foto de perfil de Helena Duarte" width="46" height="46" loading="lazy">
+            </div>
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              “A Brasa entendeu a alma do ateliê antes de desenhar qualquer coisa. A loja nova finalmente parece com as peças que a gente faz.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <cite class="testimonial-name-role">Helena Duarte · Fundadora</cite>
+              <span class="testimonial-company">Casa Ocre</span>
+            </div>
+          </article>
+
+          <!-- Depoimento 2: Rafael Moura -->
+          <article class="testimonial-card">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/images/avatar-rafael.jpg" alt="Foto de perfil de Rafael Moura" width="46" height="46" loading="lazy">
+            </div>
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              “O processo foi claro do começo ao fim. Toda semana tinha algo novo para ver, e o site entrou no ar no dia combinado.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <cite class="testimonial-name-role">Rafael Moura · Diretor comercial</cite>
+              <span class="testimonial-company">Torra Rubi</span>
+            </div>
+          </article>
+
+          <!-- Depoimento 3: Lívia Campos -->
+          <article class="testimonial-card">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/images/avatar-livia.jpg" alt="Foto de perfil de Lívia Campos" width="46" height="46" loading="lazy">
+            </div>
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              “A campanha de lançamento teve a cara da coleção. Recebemos elogios de clientes antigos e conquistamos muitos clientes novos.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <cite class="testimonial-name-role">Lívia Campos · Sócia</cite>
+              <span class="testimonial-company">Âmbar Joias</span>
+            </div>
+          </article>
+
+          <!-- Depoimento 4: Caio Ferraz -->
+          <article class="testimonial-card">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/images/avatar-caio.jpg" alt="Foto de perfil de Caio Ferraz" width="46" height="46" loading="lazy">
+            </div>
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              “Eles traduziram uma oficina de bairro numa marca que dá orgulho. A agenda online mudou a nossa rotina.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <cite class="testimonial-name-role">Caio Ferraz · Fundador</cite>
+              <span class="testimonial-company">Vento Sul Bikes</span>
+            </div>
+          </article>
+
+          <!-- Depoimento 5: Marina Teles -->
+          <article class="testimonial-card">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/images/avatar-marina.jpg" alt="Foto de perfil de Marina Teles" width="46" height="46" loading="lazy">
+            </div>
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              “Cuidado com cada detalhe, da fotografia ao código. O site é rápido até no celular mais simples.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <cite class="testimonial-name-role">Marina Teles · Arquiteta</cite>
+              <span class="testimonial-company">Lume Arquitetura</span>
+            </div>
+          </article>
+
+          <!-- Depoimento 6: Otávio Lins -->
+          <article class="testimonial-card">
+            <div class="testimonial-avatar-wrap">
+              <img src="assets/images/avatar-otavio.jpg" alt="Foto de perfil de Otávio Lins" width="46" height="46" loading="lazy">
+            </div>
+            <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              “Viraram uma extensão do nosso time. Peça nova sai no prazo e sempre com o mesmo padrão.”
+            </blockquote>
+            <div class="testimonial-author-row">
+              <cite class="testimonial-name-role">Otávio Lins · Gerente de marketing</cite>
+              <span class="testimonial-company">Grão Norte</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SEÇÃO 12: PERGUNTAS FREQUENTES (FAQ ACORDEÃO)
+         ==================================================================== -->
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        
+        <!-- Divisor com brilho neon âmbar -->
+        <div class="faq-divider" aria-hidden="true"></div>
+
+        <div class="faq-grid">
+          
+          <!-- Coluna Esquerda: Cabeçalho Sticky -->
+          <div class="faq-header-col">
+            <div class="section-tag">FAQ</div>
+            <h2 class="faq-title">
+              Perguntas<br>
+              frequentes.
+            </h2>
+            <p class="faq-subtitle">
+              Separamos respostas rápidas para as dúvidas mais comuns. Se faltar alguma, é só chamar.
+            </p>
+          </div>
+
+          <!-- Coluna Direita: Acordeão com 6 Itens -->
+          <div class="faq-accordion" role="region" aria-label="Perguntas Frequentes">
+            
+            <!-- Pergunta 1 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-1">
+                <span class="faq-q-left">
+                  <span class="faq-number">01</span>
+                  <span>Como começa um projeto com a Brasa?</span>
+                </span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="faq-ans-1" class="faq-answer">
+                <p>
+                  Começamos com uma conversa de alinhamento de 15 a 30 minutos para entender seu momento, desafios e objetivos. Em seguida, enviamos uma proposta detalhada com escopo fechado, cronograma e investimento transparente. Com a aprovação, iniciamos imediatamente a fase de imersão.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-2">
+                <span class="faq-q-left">
+                  <span class="faq-number">02</span>
+                  <span>Quanto tempo leva para o site ficar pronto?</span>
+                </span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="faq-ans-2" class="faq-answer">
+                <p>
+                  O prazo varia conforme o pacote escolhido: um site sob medida leva entre 5 a 7 semanas, um projeto de identidade completa leva de 3 a 4 semanas, e lançamentos integrados levam de 2 a 3 semanas. Cada etapa tem entregas semanais visíveis para você acompanhar a evolução.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-3">
+                <span class="faq-q-left">
+                  <span class="faq-number">03</span>
+                  <span>Preciso ter textos e fotos prontos?</span>
+                </span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="faq-ans-3" class="faq-answer">
+                <p>
+                  Não se preocupe se não tiver todo o material pronto. Nós ajudamos a estruturar o roteiro de conteúdo, direcionamos a produção de fotografia e criamos a narrativa textual e visual alinhada ao posicionamento da sua marca.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-4">
+                <span class="faq-q-left">
+                  <span class="faq-number">04</span>
+                  <span>Vou conseguir editar o site depois?</span>
+                </span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="faq-ans-4" class="faq-answer">
+                <p>
+                  Sim, com total liberdade. Desenvolvemos o código de forma modular e limpa, acompanhado de um guia de uso e treinamento da sua equipe para que você possa atualizar textos, imagens e produtos sem depender do estúdio.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-5">
+                <span class="faq-q-left">
+                  <span class="faq-number">05</span>
+                  <span>Vocês atendem empresas de outras cidades?</span>
+                </span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="faq-ans-5" class="faq-answer">
+                <p>
+                  Sim. Atendemos clientes em todo o Brasil e no exterior. Nossas reuniões, alinhamentos e revisões são conduzidos de forma remota e ágil, com canais diretos de comunicação e relatórios semanais de progresso.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div class="faq-item">
+              <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq-ans-6">
+                <span class="faq-q-left">
+                  <span class="faq-number">06</span>
+                  <span>O que recebo no fim do projeto?</span>
+                </span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div id="faq-ans-6" class="faq-answer">
+                <p>
+                  Você recebe os arquivos-fonte completos, manual de identidade da marca, repositório de código limpo e documentado, guia de estilo de componentes e 30 dias de suporte assistido pós-lançamento para garantir estabilidade absoluta.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    <!-- ====================================================================
+         SEÇÃO 13: CHAMADA FINAL (CTA RADIAL ÂMBAR)
+         ==================================================================== -->
+    <section id="contato" class="section cta-section">
+      <div class="container">
+        
+        <div class="cta-card">
+          <div class="section-tag">Vamos conversar</div>
+          <h2 class="cta-title">
+            Cada projeto é uma brasa<br>
+            que a gente acende junto.
+          </h2>
+          <p class="cta-subtitle">
+            Pronto para o próximo passo? Deixe seu e-mail e marcamos uma conversa de 15 minutos para entender o seu projeto.
+          </p>
+
+          <form id="ctaForm" class="cta-form" aria-label="Formulário de contato e agendamento">
+            <label for="ctaEmail" class="sr-only">Seu melhor e-mail</label>
+            <input type="email" 
+                   id="ctaEmail" 
+                   class="cta-input" 
+                   placeholder="Seu melhor e-mail" 
+                   required 
+                   autocomplete="email">
+            <button type="submit" class="btn btn-primary cta-submit-btn">Quero conversar</button>
+          </form>
+
+          <div id="ctaFeedbackMsg" class="cta-feedback-msg" role="status" aria-live="polite"></div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       RODAPÉ COMPLETO (FOOTER)
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Coluna 1: Marca Institucional e Newsletter -->
+        <div class="footer-brand-col">
+          <a href="#topo" class="footer-logo" aria-label="Brasa Studio início">
+            <img src="assets/icons/flame.svg" class="footer-logo-icon" alt="" width="22" height="22">
+            <span class="footer-logo-text">brasa <span style="font-weight: 400; color: var(--text-muted);">studio</span></span>
+          </a>
+          <p class="footer-tagline">
+            Feito com calor e método pela equipe Brasa Studio.
+          </p>
+
+          <form id="newsletterForm" class="footer-news-form" aria-label="Assinatura da carta semanal">
+            <label for="newsEmail" class="sr-only">Seu e-mail para a carta</label>
+            <input type="email" 
+                   id="newsEmail" 
+                   class="footer-news-input" 
+                   placeholder="Seu e-mail" 
+                   required 
+                   autocomplete="email">
+            <button type="submit" class="btn btn-primary btn-sm footer-news-btn">Assinar a carta</button>
+          </form>
+
+          <div id="newsFeedbackMsg" class="footer-news-msg" role="status" aria-live="polite"></div>
+        </div>
+
+        <!-- Coluna 2: Páginas -->
+        <div class="footer-nav-col">
+          <h3 class="footer-col-title">Páginas</h3>
+          <ul class="footer-links-list">
+            <li><a href="#topo" class="footer-link">Início</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfólio</a></li>
+            <li><a href="#contato" class="footer-link">Contato</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Estúdio -->
+        <div class="footer-nav-col">
+          <h3 class="footer-col-title">Estúdio</h3>
+          <ul class="footer-links-list">
+            <li><a href="#como-trabalhamos" class="footer-link">Processo</a></li>
+            <li><a href="#servicos" class="footer-link">Serviços</a></li>
+            <li><a href="#planos" class="footer-link">Planos</a></li>
+            <li><a href="#depoimentos" class="footer-link">Depoimentos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Showreel 2026 -->
+        <div class="footer-showreel-col">
+          <span class="footer-showreel-badge">Showreel 2026</span>
+          <div class="footer-showreel-card" tabindex="0" role="button" aria-label="Assistir ao Showreel 2026 da Brasa Studio">
+            <img src="assets/images/showreel-thumb.jpg" 
+                 alt="Miniatura cinematográfica do Showreel 2026 com claquete de estúdio escuro" 
+                 width="245" 
+                 height="147" 
+                 loading="lazy">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Direitos e Voltar ao Topo -->
+      <div class="footer-bottom-bar">
+        <span class="footer-copyright">© 2026 Brasa Studio. Todos os direitos reservados.</span>
+        <a href="#topo" id="backToTop" class="footer-back-to-top">
+          <span>Voltar ao topo</span>
+          <span aria-hidden="true">&uarr;</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Diretórios de rascunho e comparações temporárias
+scratch/
+*.log
+
+# Caches de ambiente e Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Dependências eventuais de Node / runtime
+node_modules/
+.npm/
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editores e IDEs locais (mantendo .agents e .impeccable para governança)
+.vscode/
+.idea/
+*.swp
+*.swo
