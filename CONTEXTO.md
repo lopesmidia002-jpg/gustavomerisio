@@ -46,7 +46,7 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 ### Biblioteca de Ícones Vetoriais SVG (`assets/icons/`)
 - `flame.svg`: Símbolo proprietário da chama com duas línguas de fogo, ápice em degradê âmbar luminoso e núcleo de brasa escura suave.
 - `badge-check.svg`: Selo verificado com roseta recortada em laranja brasa e checkmark escuro centralizado.
-- `compass-star.svg`: Bússola orbital radiante em vetor SVG de alta precisão com anéis concêntricos pontilhados, miras cardinais, eixos diagonais e estrela de 4 pontas luminosa.
+- `compass-star.svg`: Bússola orbital radiante em vetor SVG de 154x154px com anéis concêntricos pontilhados, miras cardinais, eixos diagonais e estrela de 4 pontas esguia calibrada proporcionalmente ao frame de vídeo.
 - `sparkle.svg`: Estrela geométrica de 4 pontas com brilho e animação.
 - `arrow-up-right.svg`: Seta em diagonal para cartões e links.
 - `check.svg`: Marcador de confirmação laranja.

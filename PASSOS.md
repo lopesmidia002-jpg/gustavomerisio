@@ -132,3 +132,12 @@
   - Tag pill `• Resultados` com fundo translúcido sutil (`rgba(255, 255, 255, 0.04)`), borda âmbar fina e ponto circular brilhante (`#FF4B19`).
   - Tipografia de alta precisão: título em duas linhas limpas (`Resultados que aparecem\nno caixa e na marca.`), subtítulo com quebra exata (`Cada entrega nasce com um objetivo claro e um jeito de medir. Veja alguns\nnúmeros de projetos recentes.`) e botão pílula `Agendar 15 minutos` com brilho inferior suave (`box-shadow: 0 4px 22px rgba(255, 75, 25, 0.45)`).
   - Validação 100% no Docker com captura visual via headless Chrome CDP e aprovação completa em `check_formatting.py` (0 erros) e `verify_all.py` (53 assets HTTP 200).
+
+- [x] **Passo 17: Redimensionamento e Calibração de Fidelidade Extrema da Bússola Orbital Radiante (`.hero-compass-wrap`)**
+  - Redução das dimensões do ornamento da bússola de 220x220px para 154x154px (proporção exata de ~150px medida na referência visual do ateliê).
+  - Ajuste de ancoragem no canto inferior direito do vídeo frame (`right: -66px; bottom: -46px;`), posicionando o centro da estrela exatamente 9px para dentro da borda direita e 28px acima da base do vídeo, como no modelo original.
+  - Refinamento do vetor `assets/icons/compass-star.svg`:
+    - Estrela de 4 pontas curvada em curvas de Bézier esguias (`d="M 100 48 C 100 84 84 100 48 100..."`), com ápices afilados que ultrapassam sutilmente o círculo sólido interno (`r=42`), mantendo o centro do diamante compacto e sem embaçamento excessivo.
+    - Anel externo pontilhado (`r=62`, `stroke-dasharray="2 4.5"`), anel interno contínuo (`r=42`) e eixos cardinais de mira estendidos com traçado fino e nítido.
+    - Filtro de brilho sutil com desfoque refinado (`stdDeviation="2.5"`), eliminando distorções de escala e superexposição.
+  - Validação 100% no Docker com captura via headless Chrome CDP e aprovação completa em `check_formatting.py` (0 erros) e `verify_all.py` (53 assets HTTP 200).

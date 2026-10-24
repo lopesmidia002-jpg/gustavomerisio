@@ -1078,10 +1078,10 @@ ul, ol {
 /* Compasso Orbital Radiante com Estrela de 4 Pontas */
 .hero-compass-wrap {
   position: absolute;
-  right: -95px;
-  bottom: -75px;
-  width: 220px;
-  height: 220px;
+  right: -66px;
+  bottom: -46px;
+  width: 154px;
+  height: 154px;
   pointer-events: none;
   z-index: 2;
   display: flex;
@@ -1093,7 +1093,7 @@ ul, ol {
 .hero-compass-svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 20px rgba(255, 75, 25, 0.45));
+  filter: drop-shadow(0 0 14px rgba(255, 75, 25, 0.45));
 }
 
 @keyframes subtleCompassGlow {

@@ -269,6 +269,16 @@ asserts/
 - **Validação Automatizada:**
   - Aprovado no `check_formatting.py` (0 erros) e no `verify_all.py` (53 assets retornando HTTP 200 OK no Docker).
 
+### 4.19. Redimensionamento e Calibração da Bússola Orbital Radiante (Passo 17)
+- **Redução e Escala Proporcional:**
+  - Ajuste de dimensões do ornamento `.hero-compass-wrap` de 220x220px para 154x154px, eliminando a desproporção visual em relação ao frame de vídeo cinematográfico.
+  - Reposicionamento milimétrico na extremidade inferior direita do vídeo (`right: -66px; bottom: -46px;`), harmonizando o centro da estrela com o modelo original (9px para dentro da borda lateral e 28px acima da base).
+- **Geometria Vetorial Fina (`assets/icons/compass-star.svg`):**
+  - Redesenho da estrela radiante de 4 pontas com curvas de Bézier cúbicas esguias (`d="M 100 48 C 100 84 84 100 48 100..."`), garantindo cintura esbelta e pontas pontiagudas sem embaçamento excessivo.
+  - Filtro de brilho calibrado com `stdDeviation="2.5"` e `drop-shadow(0 0 14px rgba(255, 75, 25, 0.45))` no CSS, preservando a nitidez dos anéis e das miras.
+- **Validação Automatizada:**
+  - Testes `check_formatting.py` (0 erros) e `verify_all.py` (53 assets HTTP 200) aprovados no Docker.
+
 ---
 
 ## 5. Acessibilidade e SEO
