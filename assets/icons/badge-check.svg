@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+  <!-- Scalloped verified rosette badge in brand orange -->
+  <path d="M12 1.8L14.4 3.6L17.3 3.2L18.6 5.8L21.4 7.0L21.0 10.0L22.8 12.3L21.0 14.6L21.4 17.6L18.6 18.8L17.3 21.4L14.4 21.0L12 22.8L9.6 21.0L6.7 21.4L5.4 18.8L2.6 17.6L3.0 14.6L1.2 12.3L3.0 10.0L2.6 7.0L5.4 5.8L6.7 3.2L9.6 3.6Z" fill="#FF4B19" />
+  <!-- Dark Checkmark -->
+  <path d="M7.8 12.2L10.6 15.0L16.2 9.4" fill="none" stroke="#050505" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

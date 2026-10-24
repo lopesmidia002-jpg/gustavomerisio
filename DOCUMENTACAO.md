@@ -110,10 +110,10 @@ asserts/
 
 ### 4.3. Seção Editorial "Sobre a Brasa" (`.sobre-section`)
 - **Composição em 2 Colunas Balanceadas:** Grid de proporção `0.95fr` x `1.05fr`.
-- **Retrato Fotográfico Vertical:** Fotografia autoral de alta resolução (`assets/images/sobre-artisan.jpg`) mostrando o designer/artesão em bancada com iluminação de ateliê e amostras de materiais.
-- **Apresentação de Método:** Título editorial *"Marcas mais fortes, impressões que ficam."* e manifesto de ateliê.
-- **Checklist com Ícones de Faísca:** Dois diferenciais institucionais chave acompanhados do ícone de estrela âmbar.
-- **Bloco de Avaliação Social:** 5 estrelas sólidas em laranja brasa acompanhadas do selo de nota 4,9 por 86 clientes.
+- **Retrato Fotográfico Vertical Autêntico:** Fotografia original de alta resolução (`assets/images/sobre-artisan.jpg`, proporção 4:5, 470x583px) retratando o designer trabalhando em bancada de madeira com laptop e amostras de cores sob iluminação chiaroscuro de ateliê. Moldura com raio de 22px e linha de brilho de calor brasa incandescente na base do cartão (`.sobre-image-wrap::after`).
+- **Apresentação de Método:** Microetiqueta `• Sobre a Brasa`, título editorial *"Marcas mais fortes, impressões que ficam."*, manifesto e linha divisória horizontal (`.sobre-divider`).
+- **Checklist com Selos Verificados:** Dois diferenciais institucionais chave acompanhados do ícone vetorial de selo verificado com checkmark escuro sobre roseta laranja (`assets/icons/badge-check.svg`).
+- **Linha de Ação & Avaliação Social:** Botão de ação primário `Como trabalhamos`, divisor vertical translúcido e bloco com 5 estrelas brancas acompanhadas do selo de nota `4,9 dada por 86 clientes`.
 
 ### 4.4. Resultados em Destaque (`.results-section`)
 - **Header Centralizado:** Tag de categoria `• Resultados`, título de alto impacto e CTA `Agendar 15 minutos`.

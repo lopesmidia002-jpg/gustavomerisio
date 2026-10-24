@@ -89,10 +89,18 @@
   - Divisor vertical no cabeçalho entre o logo e a navegação (`.header-divider`), agrupando logo e links de navegação à esquerda e botão de ação com brilho âmbar à direita.
   - Substituição da barra simples de parceiros por 4 cartões/tiles escuros de marcas parceiras (`.hero-partner-card`), medindo 58x58px, raio 14px, fundo acetinado `#0E0E0E` e borda de 1px com os símbolos `O` (círculo espesso), `▲` (triângulo sólido), `⬭` (cápsula dividida) e `≈` (dupla onda fluida).
   - Substituição da imagem do vaso cerâmico pelo frame de vídeo cinematográfico autêntico do modelo (`.hero-video-frame`, raio 18px, proporção 16:11) com iluminação chiaroscuro, vaso cerâmico e botão circular Play com vidro fosco e interação tátil.
-  - Criação e integração vetorial da bússola orbital radiante (`assets/icons/compass-star.svg`) com círculos concêntricos, anel externo pontilhado, miras cardinais, raios diagonais e estrela de 4 pontas em degradê fogo (`#FFA240` a `#DC3B00`), sobreposta ao vértice inferior direito do vídeo com pulsação suave.
 - [x] **Passo 12: Atualização do Logotipo Oficial da Chama (Identidade Visual Autêntica)**
   - Vetorização precisa do novo ícone de chama (`assets/icons/flame.svg`) a partir do modelo autêntico fornecido.
   - Silhueta orgânica de duas pontas: língua secundária curvada à esquerda e língua principal alongada à direita com ápice em âmbar luminoso.
   - Núcleo de brasa escura (`#66220D`) com difusão sutil e degradê vertical quente (`#FFAE3B` no topo até `#CC3208` na base).
   - Propagação automática em todos os 5 pontos de aplicação da marca (cabeçalho desktop, menu mobile drawer, cartão de planos, rodapé institucional e favicon).
   - Validação 100% Docker com status HTTP 200 em todos os 53 assets estáticos via `verify_all.py`.
+
+- [x] **Passo 13: Alinhamento Pixel a Pixel da Seção "Sobre a Brasa" com a Foto Autêntica do Designer**
+  - Substituição da foto gerada pela fotografia autêntica de alta resolução do modelo original (`assets/images/sobre-artisan.jpg`, designer em bancada com laptop, amostras de cores e iluminação de ateliê).
+  - Moldura com raio de 22px, proporção 4:5 e linha de brilho de brasa incandescente na base do cartão (`.sobre-image-wrap::after`).
+  - Adição do divisor horizontal sutil (`.sobre-divider`) acima da lista de diferenciais.
+  - Criação do ícone vetorial de selo verificado com checkmark escuro sobre roseta laranja (`assets/icons/badge-check.svg`).
+  - Linha de ação inferior com botão `Como trabalhamos`, divisor vertical translúcido e 5 estrelas brancas acompanhadas da nota `4,9 dada por 86 clientes`.
+  - Validação completa com captura de tela headless Chrome e execução do teste automatizado `verify_all.py` (53 assets com status HTTP 200 OK via Docker).
+

@@ -29,7 +29,7 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 
 ### Ativos Visuais e Fotografias (`assets/images/`)
 - `hero-craft-object.jpg`: Fotografia cinematográfica de alta resolução em proporção 16:11 exibindo peça cerâmica artesanal sob iluminação cenográfica de ateliê, câmera em silhueta e botão Play central em vidro fosco.
-- `sobre-artisan.jpg`: Retrato vertical 3:4 em iluminação cinematográfica quente de artesão trabalhando com amostras táteis em bancada de madeira escura.
+- `sobre-artisan.jpg`: Fotografia de alta resolução em proporção 4:5 retratando o designer em bancada com laptop e amostras de cores sob iluminação de ateliê.
 - `result-casa-ocre.jpg`: Vaso artesanal minimalista em cerâmica terracota escura sob feixe de luz âmbar direcional.
 - `result-torra-rubi.jpg`: Xícara cerâmica de café espresso especial com crema espessa e grãos tostados sobre tábua de ardósia.
 - `result-ambar-joias.jpg`: Macro fotografia de aliança artesanal em ouro martelado sobre rocha vulcânica escura texturizada.
@@ -45,6 +45,7 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 
 ### Biblioteca de Ícones Vetoriais SVG (`assets/icons/`)
 - `flame.svg`: Símbolo proprietário da chama com duas línguas de fogo, ápice em degradê âmbar luminoso e núcleo de brasa escura suave.
+- `badge-check.svg`: Selo verificado com roseta recortada em laranja brasa e checkmark escuro centralizado.
 - `compass-star.svg`: Bússola orbital radiante em vetor SVG de alta precisão com anéis concêntricos pontilhados, miras cardinais, eixos diagonais e estrela de 4 pontas luminosa.
 - `sparkle.svg`: Estrela geométrica de 4 pontas com brilho e animação.
 - `arrow-up-right.svg`: Seta em diagonal para cartões e links.
