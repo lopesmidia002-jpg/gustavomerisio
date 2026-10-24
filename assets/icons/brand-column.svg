@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#92908C" stroke-width="2" stroke-linecap="round" width="22" height="22">
-  <path d="M4 20h16M4 4h16M7 4v16M12 4v16M17 4v16"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24" height="24">
+  <!-- Top rounded half-oval -->
+  <path d="M5 11 C5 7 8 5 12 5 C16 5 19 7 19 11 Z" fill="#FFFFFF"/>
+  <!-- Bottom rounded bar -->
+  <rect x="5" y="14" width="14" height="3" rx="1.5" fill="#FFFFFF"/>
 </svg>

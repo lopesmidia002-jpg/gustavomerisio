@@ -90,17 +90,23 @@ asserts/
 
 ### 4.1. Header & Navegação Fixa (`.site-header`)
 - **Backdrop Blur & Transparência:** Fundo em `rgba(5, 5, 5, 0.82)` com `backdrop-filter: blur(14px)` e transição suave ao rolar a página (`.is-scrolled`).
-- **Logotipo Vetorial:** Ícone de brasa proprietário em gradiente âmbar (`assets/icons/flame.svg`) com tipografia geométrica `brasa studio`.
-- **Menu Desktop:** Links com estado hover e sublinhado ativo com indicador pill laranja.
+- **Agrupamento Esquerdo com Divisor:** Logotipo vetorial de chama (`assets/icons/flame.svg`), tipografia geométrica `brasa studio`, divisor vertical cinza translúcido (`.header-divider`) e links de navegação alinhados em sequência.
+- **Botão de Conversão em Destaque:** Botão `Fale com a gente` no extremo direito com aura luminosa âmbar (`box-shadow: 0 4px 18px rgba(255, 75, 25, 0.28)`).
 - **Menu Mobile Drawer (`#mobileDrawer`):** Painel lateral deslizante para telas menores que 900px, com bloqueio de scroll no body, fechamento via tecla `Escape`, clique no overlay ou toque no botão de fechar.
 
 ### 4.2. Hero Section (`.hero-section`)
 - **Composição em Duas Colunas:** Layout assimétrico em CSS Grid (`1.15fr` x `0.85fr`).
-- **Microetiqueta Superior (`.hero-badge-wrap`):** Selo `NOVO` em laranja com borda luminosa e texto `Agenda aberta para 2027`.
+- **Iluminação Atmosférica Volumétrica:** Feixe de luz radial quente no canto superior direito (`.hero-section::before`, 980x860px) com gradiente âmbar (#FF4B19 a transparente) e halo difuso à esquerda.
+- **Microetiqueta Superior (`.hero-badge-wrap`):** Selo `NOVO` em laranja brasa com texto `Agenda aberta para 2027` em pílula escura acetinada.
 - **Título Editorial Display:** Tamanho dinâmico `clamp(2.5rem, 5.2vw, 4.25rem)` com quebra de linha planejada e destaque cromático em *"marcas criativas."*.
-- **Subtítulo & Ações:** Parágrafo de contraste controlado e dupla de botões de ação (`.btn-secondary` branco e `.btn-ghost` translúcido).
-- **Marcas Parceiras:** Linha com 4 símbolos geométricos com efeito de transição em hover (`brand-circle`, `brand-triangle`, `brand-column`, `brand-wave`).
-- **Elemento Fotográfico de Destaque:** Fotografia em alta resolução de um objeto artesanal em pedra e cerâmica escura com borda dourada iluminada, vinheta suave para fusão com o fundo preto, moldura acetinada e estrela flutuante de 4 pontas (`✦`) com animação de pulso.
+- **Subtítulo & Ações:** Parágrafo descritivo e dupla de botões de ação (`.btn-secondary` branco e `.btn-ghost` translúcido grafite).
+- **Cartões de Marcas Parceiras (`.hero-partner-card`):** Grade de 4 tiles escuros acetinados (58x58px, raio 14px, fundo `#0E0E0E`, borda sutil `1px solid rgba(255,255,255,0.09)`) contendo os símbolos gráficos espessos e nítidos:
+  - `O` (`brand-circle.svg`): Círculo espesso vazado.
+  - `▲` (`brand-triangle.svg`): Triângulo sólido minimalista.
+  - `⬭` (`brand-column.svg`): Cápsula dividida com cúpula e barra horizontal.
+  - `≈` (`brand-wave.svg`): Dupla onda estilizada fluida.
+- **Cartão de Vídeo Cinematográfico (`.hero-video-frame`):** Proporção 16:11 com raio de 18px, iluminação chiaroscuro exibindo a peça artesanal cerâmica em ateliê, silhueta de câmera profissional e botão circular Play centralizado com vidro fosco (`backdrop-filter`) e interação táctil em hover.
+- **Bússola Orbital Radiante (`.hero-compass-wrap` / `compass-star.svg`):** Ornamento geométrico avançado de 220x220px ancorado no canto inferior direito do vídeo com anel interno sólido, anel externo pontilhado, miras cardinais com marcações de eixos, 4 raios diagonais a 45° e estrela de 4 pontas curvada em degradê fogo com animação infinita de pulso luminescente (`subtleCompassGlow`).
 
 ### 4.3. Seção Editorial "Sobre a Brasa" (`.sobre-section`)
 - **Composição em 2 Colunas Balanceadas:** Grid de proporção `0.95fr` x `1.05fr`.

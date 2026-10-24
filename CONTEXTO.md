@@ -28,7 +28,7 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 - `--badge-text`: `#FF6A3D`
 
 ### Ativos Visuais e Fotografias (`assets/images/`)
-- `hero-craft-object.jpg`: Fotografia de alta resolução em proporção 3:2 retratando tigela artesanal cerâmica em pedra escura com detalhes dourados/âmbar sob iluminação chiaroscuro de ateliê.
+- `hero-craft-object.jpg`: Fotografia cinematográfica de alta resolução em proporção 16:11 exibindo peça cerâmica artesanal sob iluminação cenográfica de ateliê, câmera em silhueta e botão Play central em vidro fosco.
 - `sobre-artisan.jpg`: Retrato vertical 3:4 em iluminação cinematográfica quente de artesão trabalhando com amostras táteis em bancada de madeira escura.
 - `result-casa-ocre.jpg`: Vaso artesanal minimalista em cerâmica terracota escura sob feixe de luz âmbar direcional.
 - `result-torra-rubi.jpg`: Xícara cerâmica de café espresso especial com crema espessa e grãos tostados sobre tábua de ardósia.
@@ -45,13 +45,14 @@ A atmosfera visual combina o calor do trabalho artesanal (o fogo, a brasa, os ma
 
 ### Biblioteca de Ícones Vetoriais SVG (`assets/icons/`)
 - `flame.svg`: Símbolo de brasa proprietário com gradiente quente.
+- `compass-star.svg`: Bússola orbital radiante em vetor SVG de alta precisão com anéis concêntricos pontilhados, miras cardinais, eixos diagonais e estrela de 4 pontas luminosa.
 - `sparkle.svg`: Estrela geométrica de 4 pontas com brilho e animação.
 - `arrow-up-right.svg`: Seta em diagonal para cartões e links.
 - `check.svg`: Marcador de confirmação laranja.
 - `star.svg`: Estrela sólida para avaliações.
 - `step-search.svg`, `step-pen.svg`, `step-rocket.svg`: Ícones das etapas de processo.
 - `icon-chart.svg`, `icon-layers.svg`, `icon-zap.svg`, `icon-eye.svg`, `icon-calendar.svg`, `icon-smartphone.svg`: Ícones dos 6 diferenciais de estúdio.
-- `brand-circle.svg`, `brand-triangle.svg`, `brand-column.svg`, `brand-wave.svg`: Quatro símbolos minimalistas de marcas atendidas.
+- `brand-circle.svg`, `brand-triangle.svg`, `brand-column.svg`, `brand-wave.svg`: Quatro símbolos vetoriais nítidos de marcas atendidas (`O`, `▲`, `⬭`, `≈`).
 
 ---
 

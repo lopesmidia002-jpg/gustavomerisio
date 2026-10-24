@@ -18,20 +18,24 @@
        ======================================================================== -->
   <header id="header" class="site-header">
     <div class="container header-container">
-      <a href="#inicio" class="logo" aria-label="Brasa Studio - Página Inicial">
-        <img src="assets/icons/flame.svg" alt="" class="logo-icon" width="22" height="22">
-        <span class="logo-text">brasa <span>studio</span></span>
-      </a>
-      
-      <nav class="nav-desktop" aria-label="Navegação principal">
-        <ul class="nav-links">
-          <li><a href="#inicio" class="nav-link active">Início</a></li>
-          <li><a href="#sobre" class="nav-link">Sobre</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
-          <li><a href="#contato" class="nav-link">Contato</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
-        </ul>
-      </nav>
+      <div class="header-left">
+        <a href="#inicio" class="logo" aria-label="Brasa Studio - Página Inicial">
+          <img src="assets/icons/flame.svg" alt="" class="logo-icon" width="22" height="22">
+          <span class="logo-text">brasa <span>studio</span></span>
+        </a>
+        
+        <div class="header-divider" aria-hidden="true"></div>
+        
+        <nav class="nav-desktop" aria-label="Navegação principal">
+          <ul class="nav-links">
+            <li><a href="#inicio" class="nav-link active">Início</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
+            <li><a href="#faq" class="nav-link">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="header-actions" style="display: flex; align-items: center; gap: 0.75rem;">
         <a href="#contato" class="btn btn-primary btn-sm">Fale com a gente</a>
@@ -110,27 +114,43 @@
               <a href="#sobre" class="btn btn-ghost btn-lg">Conheça a Brasa</a>
             </div>
 
-            <!-- Ícones de Marcas Parceiras -->
+            <!-- Grade de 4 Cartões de Marcas Parceiras -->
             <div class="hero-partners" aria-label="Símbolos de marcas parceiras">
-              <img src="assets/icons/brand-circle.svg" alt="Marca parceira Casa Ocre" class="hero-partner-icon" width="22" height="22">
-              <img src="assets/icons/brand-triangle.svg" alt="Marca parceira Torra Rubi" class="hero-partner-icon" width="22" height="22">
-              <img src="assets/icons/brand-column.svg" alt="Marca parceira Âmbar Joias" class="hero-partner-icon" width="22" height="22">
-              <img src="assets/icons/brand-wave.svg" alt="Marca parceira Lume Arquitetura" class="hero-partner-icon" width="22" height="22">
+              <div class="hero-partner-card" title="Casa Ocre">
+                <img src="assets/icons/brand-circle.svg" alt="" width="26" height="26">
+              </div>
+              <div class="hero-partner-card" title="Torra Rubi">
+                <img src="assets/icons/brand-triangle.svg" alt="" width="26" height="26">
+              </div>
+              <div class="hero-partner-card" title="Âmbar Joias">
+                <img src="assets/icons/brand-column.svg" alt="" width="26" height="26">
+              </div>
+              <div class="hero-partner-card" title="Lume Arquitetura">
+                <img src="assets/icons/brand-wave.svg" alt="" width="26" height="26">
+              </div>
             </div>
           </div>
 
-          <!-- Coluna Direita: Fotografia Cinematográfica com Luz Âmbar -->
+          <!-- Coluna Direita: Vídeo Frame Cinematográfico com Play Button e Compasso Orbital -->
           <div class="hero-visual-wrap">
-            <div class="hero-image-frame">
+            <div class="hero-video-frame">
               <img src="assets/images/hero-craft-object.jpg" 
-                   alt="Objeto artesanal com acabamento de luxo e iluminação quente de ateliê" 
+                   alt="Objeto artesanal iluminado com acabamento de ateliê e iluminação quente" 
                    width="600" 
-                   height="400"
+                   height="380"
                    fetchpriority="high">
+              
+              <!-- Botão Play Central com Vidro Fosco -->
+              <button class="hero-play-button" aria-label="Reproduzir vídeo de apresentação da Brasa Studio">
+                <svg class="hero-play-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
             </div>
-            <!-- Estrela Decorativa de 4 Pontas -->
-            <div class="hero-sparkle-badge" aria-hidden="true">
-              <img src="assets/icons/sparkle.svg" alt="" width="22" height="22">
+            
+            <!-- Compasso Orbital Radiante com Estrela de 4 Pontas -->
+            <div class="hero-compass-wrap" aria-hidden="true">
+              <img src="assets/icons/compass-star.svg" alt="" class="hero-compass-svg" width="240" height="240">
             </div>
           </div>
 

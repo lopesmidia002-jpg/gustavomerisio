@@ -85,6 +85,10 @@
   - Criação do `README.md` completo, com badges, tabela das 15 seções, arquitetura visual, guia Docker e métricas de acessibilidade.
   - Configuração do remote origin (`https://github.com/lopesmidia002-jpg/gustavomerisio.git`).
   - Commit inicial e sincronização bem-sucedida da branch `main` no GitHub.
-
-
-
+- [x] **Passo 11: Alinhamento Pixel a Pixel da Hero com o Modelo Visual (Bússola Orbital, Frame de Vídeo, Badges em Bloco e Header)**
+  - Divisor vertical no cabeçalho entre o logo e a navegação (`.header-divider`), agrupando logo e links de navegação à esquerda e botão de ação com brilho âmbar à direita.
+  - Substituição da barra simples de parceiros por 4 cartões/tiles escuros de marcas parceiras (`.hero-partner-card`), medindo 58x58px, raio 14px, fundo acetinado `#0E0E0E` e borda de 1px com os símbolos `O` (círculo espesso), `▲` (triângulo sólido), `⬭` (cápsula dividida) e `≈` (dupla onda fluida).
+  - Substituição da imagem do vaso cerâmico pelo frame de vídeo cinematográfico autêntico do modelo (`.hero-video-frame`, raio 18px, proporção 16:11) com iluminação chiaroscuro, vaso cerâmico e botão circular Play com vidro fosco e interação tátil.
+  - Criação e integração vetorial da bússola orbital radiante (`assets/icons/compass-star.svg`) com círculos concêntricos, anel externo pontilhado, miras cardinais, raios diagonais e estrela de 4 pontas em degradê fogo (`#FFA240` a `#DC3B00`), sobreposta ao vértice inferior direito do vídeo com pulsação suave.
+  - Calibração da iluminação atmosférica superior direita da Hero (`.hero-section::before`) para gerar o degradê volumétrico de luz quente idêntico ao modelo.
+  - Validação completa com captura de tela headless Chrome e execução do teste automatizado `scripts/verify_all.py`, atingindo 100% de sucesso em 53 assets servidos pelo Docker na porta 3000.
